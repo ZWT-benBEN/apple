@@ -1,0 +1,973 @@
+@import 'base';
+
+body{
+  width: 100%;
+  overflow-x: hidden;
+
+  @include onm{
+    overflow-x: hidden;
+  }
+
+  @include ons{
+    overflow-x: hidden;
+  }
+}
+$bg-list:(
+  "logo":20px,
+  "mac":20px,
+  "ipad":20px,
+  "iphone":20px,
+  "watch":20px,
+  "tv":20px,
+  "music":20px,
+  "support":20px,
+  "search":20px,
+  "bag":20px
+);
+@keyframes pao {
+  0%{
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.header{
+  width: 100%;
+  height:44px;
+  background: rgb(41,41,41);
+  color: #fff;
+  position: relative;
+  z-index: 10;
+  .zhezhao{
+    width: 100%;
+    height: 1000px;
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+
+    display: none;
+    @include ons{
+      height: 0;
+    }
+  }
+  .top{
+    max-width: 1024px;
+    height: 44px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    .nav{
+      transition: all .8s ease;
+      height: 44px;
+      text-align: justify;
+      .xiaoshi{
+
+      }
+
+      li{
+        width: auto;
+        height: 44px;
+        display: inline-block;
+        padding: 0 20px;
+        &:hover{
+          opacity:0.6;
+        }
+        a{
+          display: block;
+          height: 44px;
+          padding: 0 20px;
+          @include v-align;
+
+          span{
+            font-size: 0;
+            height: 0;
+            line-height: 0;
+          }
+        }
+      }
+      @each $k in map_keys($bg-list){
+        .#{$k}{
+          width: map_get($bg-list,$k);
+          background: url(../img/#{$k}.svg) no-repeat center center;
+        }
+       
+      &::after{
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 0;
+        line-height: 0;
+        opacity:0;
+      }
+      
+
+    }
+      .bag.close{
+        background: url("../img/guanbi.jpg") no-repeat center center;
+      }
+      }
+
+    .search-box{
+      width: 600px;
+      height: 44px;
+      box-sizing: border-box;
+      @include c-align;
+      top:0;
+      transition:all .6s ease;
+      transform: translateX(1000px);
+      span{
+        display: block;
+        @include cube(44px);
+        float: left;
+        background: url("../img/search.svg")no-repeat center center;
+      }
+
+      input{
+        width: 500px;
+        height: 44px;
+        padding: 0;
+        margin: 0;
+        color: #fff;
+        font-size: 14px;
+        list-style: none;
+        background: none;
+        border: none;
+        font-family: zitizhengc;
+        font-size: 18px;
+        outline: medium;
+      }
+
+      .xiala{
+        position: relative;
+        z-index: 20;
+        width: 100%;height: 0px;
+        background: #fff;
+        box-sizing: border-box;
+        font-size: 14px;
+        font-family: "ziti-jixi";
+        color: #acacac;
+        transition:all .4s ease;
+        p{
+          width: 100%;
+          padding: 10px 10px;
+          opacity:0;
+          transition: all .4s ease;
+        }
+
+        li{
+
+          width: 100%;
+          box-sizing: border-box;
+          font-family: "zitizhengc";
+          font-size: 16px;
+          opacity: 0;
+          transition: all 1.6s ease;
+          a{
+            display: block;
+            padding: 6px 30px;
+            list-style: none;
+            color: #acacac;
+            &:hover{
+            background: #f2f2f2;
+            color: #0188CC;
+          }
+          }
+        }
+
+      }
+
+    }
+
+    .search-box.active{
+      display: block;
+      transform: translateX(0);
+      .xiala{
+        height:230px;
+        padding: 20px 20px;
+        transition: all .4s ease .8s;
+        p{
+          animation: pao .4s ease 1s forwards;
+        }
+        li:nth-of-type(1){
+           animation: pao .4s ease 1.2s forwards;
+         }
+         li:nth-of-type(2){
+           animation: pao .4s ease 1.4s forwards;
+         }
+         li:nth-of-type(3){
+           animation: pao .4s ease 1.6s forwards;
+         }
+         li:nth-of-type(4){
+           animation: pao .4s ease 1.8s forwards;
+         }
+         li:nth-of-type(5){
+           animation: pao .4s ease 2s forwards;
+         }
+      }
+    }
+
+    .nav-phone{
+      display: none;
+      padding: 0 10px;
+      .menu{
+        a{
+          display: block;
+          @include cube(48px);
+          @include v-align;
+          left: 0;
+          margin: 0;
+          &:hover{
+          opacity:0.6;
+          }
+        }
+
+        .hang ,.shu{
+          width:17px;
+          height:1px;
+          background:#fff;
+          position: relative;
+          transition: all 0.3s ease;
+          transform-origin:20%;
+        }
+        $size:20px;
+        .hang{
+          @include c-align;
+          top:$size;
+        }
+        .shu{
+          @include c-align;
+          bottom: $size;
+        }
+      }
+      .menu.change{
+        .hang{
+          transform:rotateZ(45deg) ;
+        }
+        .shu{
+          transform: rotateZ(-45deg);
+        }
+      }
+      .logo{
+        a{
+          @include cube(48px);
+          background: url(../img/logo.svg) no-repeat center center;
+          @include c-align;
+          &:hover{
+            opacity:0.6;
+          }
+        }
+      }
+      .bag{
+        a{
+          @include cube(48px);
+          background: url(../img/bag.svg) no-repeat center center;
+          @include v-align;
+          right: 0;
+          margin: 0;
+          &:hover{
+            opacity:0.6;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@include ons{
+  .header{
+    height: 48px;
+    .top{
+      height: 48px;
+      background: #000;
+
+      .nav{
+        display: none;
+      }
+      .nav-phone{
+        display: block;
+      }
+      .search-box.active{
+        display: none;
+      }
+    }
+  }
+  .header-xy {
+    width: 100%;
+    height: 1000px;
+    background: #000;
+    display: none;
+    padding: 20px 0;
+    position: absolute;
+
+    li{
+      transition: all 0.8s ease;
+      padding:0 60px ;
+      opacity: 0;
+      span{
+        display: block;
+        width: 100%;height: 100%;
+        padding: 15px 0;
+        color: #fff;
+        font-family: zitizhengc;
+        border-bottom: 1px solid #fff;
+        font-size:22px;
+        &:hover{
+          opacity: 0.7;
+        }
+      }
+      a{
+        padding: 15px 0;
+        border-bottom: 1px solid #333;
+        width: 100%;height: 100%;
+        display: block;
+        color: #fff;
+        font-family: zitixi;
+        font-size: 20px;
+        &:hover{
+          opacity: 0.7;
+        }
+      }
+    }
+    li:nth-child(1){
+      animation:luo .8s ease .2s forwards;
+    }
+    li:nth-child(2){
+      animation:luo .8s ease .3s forwards;
+    }
+    li:nth-child(3){
+      animation:luo .8s ease .4s forwards;
+    }
+    li:nth-child(4){
+      animation:luo .8s ease .5s forwards;
+    }
+    li:nth-child(5){
+      animation:luo .8s ease .6s forwards;
+    }
+    li:nth-child(6){
+      animation:luo .8s ease .7s forwards;
+    }
+    li:nth-child(7){
+      animation:luo .8s ease .8s forwards;
+    }
+    li:nth-child(8){
+      animation:luo .8s ease .9s forwards;
+    }
+  }
+}
+@keyframes luo {
+  0%{
+    transform: translateY(-1000px);
+    opacity:0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media screen and (min-width:$s-size){
+  .header-xy{
+    opacity: 0;
+    height:0;
+    display: none;
+  }
+}
+.bannerbox {
+  width: 100%;height:auto;
+  overflow-x: hidden;
+  .banner {
+    width: 100%;
+    height: 606px;
+    background: #fff;
+    position: relative;
+    overflow-x: hidden;
+    cursor: pointer;
+    @include ons {
+      height: 508px;
+    }
+    .zuo {
+      display: none;
+      cursor: pointer;
+      width: 65px;
+      height: 112px;
+      background: url("../img/zuo.png");
+      z-index: 10;
+      @include v-align;
+      left: 20px;
+    }
+    .you {
+      cursor: pointer;
+      display: none;
+      width: 65px;
+      height: 112px;
+      background: url("../img/you.png");
+      z-index: 10;
+      @include v-align;
+      right: 20px;
+    }
+    .lunbo {
+      width: 100%;
+      height: 606px;
+      @include ons {
+        height: 508px;
+      }
+      li {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        //transition:all .8s ease;
+        /*transform:translateX(100%);*/
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          color: #333;
+        }
+      }
+      li:nth-child(1) {
+        /* transform: translateX(0);*/
+        a {
+          background: url('../img/iphone_6s_medium.jpg') no-repeat bottom center;
+          @include ons {
+            background: url('../img/iphone_6s_small.jpg') no-repeat 50% 90%;
+          }
+        }
+        .iphonebox {
+          width: 100%;
+          height: 260px;
+          text-align: center;
+          font-family: zitixi;
+          font-size: 30px;
+          @include ons {
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+          }
+
+          p {
+            @include c-align;
+            top: 100px;
+            width: 205px;
+            height: 40px;
+            background: url("../img/iphone_6s_medium.png") no-repeat;
+
+            @include ons {
+              width: 166px;
+              height: 31px;
+              @include c-align;
+              background: url("../img/iphone_6s_small.png") no-repeat;
+            }
+          }
+          span {
+            line-height: 380px;
+            @include ons {
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              @include c-align;
+              top: 140px;
+            }
+          }
+
+        }
+      }
+      li:nth-child(2) {
+        a {
+          background: url('../img/ipad_pro_family_medium.jpg') no-repeat 50% 350%;
+          @include ons {
+            background: url("../img/ipad_pro_family_small.jpg") no-repeat 50% 100%
+          }
+        }
+        .ipadbox {
+          width: 100%;
+          height: 260px;
+          text-align: center;
+          font-family: zitixi;
+          font-size: 30px;
+          @include ons {
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+          }
+
+          p {
+            @include c-align;
+            top: 100px;
+            width: 205px;
+            height: 40px;
+            font-size: 36px;
+            color: #333;
+            font-family: zitizhengc;
+
+            @include ons {
+              width: 166px;
+              height: 31px;
+              @include c-align;
+            }
+          }
+          span {
+            line-height: 380px;
+            @include ons {
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              @include c-align;
+              top: 140px;
+            }
+          }
+        }
+      }
+      li:nth-child(3) {
+        a {
+          background: url('../img/apple_watch_trio_medium.jpg') no-repeat 50% 80%;
+          @include ons {
+            background: url('../img/apple_watch_trio_small.jpg') no-repeat 50% 80%;
+          }
+        }
+        .watchbox {
+          width: 100%;
+          height: 260px;
+          text-align: center;
+          font-family: zitixi;
+          font-size: 30px;
+          @include ons {
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+          }
+
+          p {
+            @include c-align;
+            top: 100px;
+            width: 205px;
+            height: 40px;
+            background: url("../img/apple_watch_medium.png") no-repeat;
+
+            @include ons {
+              width: 166px;
+              height: 31px;
+              @include c-align;
+              background: url("../img/apple_watch_small.png") no-repeat;
+            }
+          }
+          span {
+            line-height: 380px;
+            @include ons {
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              @include c-align;
+              top: 140px;
+            }
+          }
+
+        }
+      }
+      li:nth-child(4) {
+        a {
+          background: url('../img/macbook_medium.png') no-repeat 50% 80%;
+          @include ons {
+            background: url('../img/macbook_small.png') no-repeat 50% 80%;
+          }
+        }
+        .macbox {
+          width: 100%;
+          height: 260px;
+          text-align: center;
+          font-family: zitixi;
+          font-size: 30px;
+          @include ons {
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+          }
+
+          p {
+            @include c-align;
+            top: 100px;
+            width: 205px;
+            height: 40px;
+            font-size: 36px;
+            color: #333;
+            font-family: zitizhengc;
+
+            @include ons {
+              width: 166px;
+              height: 31px;
+              @include c-align;
+            }
+          }
+          span {
+            line-height: 380px;
+            @include ons {
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              @include c-align;
+              top: 140px;
+            }
+          }
+        }
+      }
+      /* li.lb-activexy{
+         transform: translateX(0);
+       }
+       li.lb-activexz{
+         transform: translateX(-100%);
+       }*/
+      /*@keyframes lunbomove {
+        0%{
+          transform: translateX(100%);
+        }
+        100%{
+          transform: translateX(0);
+        }
+      }*/
+      &::after {
+        content: "";
+        clear: both;
+      }
+    }
+
+    .point {
+      @include c-align;
+      bottom: 7px;
+      width: 114px;
+      height: 8px;
+      li {
+        width: 8px;
+        height: 8px;
+        background: #999999;
+        float: left;
+        margin: 0 10px;
+        border-radius: 50%;
+      }
+      li.p-yangshi {
+        border: 1px solid #187DCE;
+        transform: translateY(-1px);
+        background: #fff;
+      }
+    }
+  }
+}
+.sikuaibox{
+  width: 100%;
+  height:auto;
+.sikuai{
+  width: 100%;height: 200px;
+  @include onm{
+    height: 400px;
+  }
+  @include ons{
+    height: 800px;
+  }
+  .col{
+   height: 200px;
+    border:1px solid #fff;
+    box-sizing: border-box;
+  }
+  .col.sk1{
+    height: 200px;
+    background: url("../img/apple_tv_medium.jpg") no-repeat center center;
+    @include ons{
+      background: url("../img/apple_tv_small.jpg") no-repeat center center;
+    }
+  }
+  .col.sk2{
+    height: 200px;
+    background: url("../img/public_betas_medium.jpg") no-repeat center center;
+    @include ons{
+      background: url("../img/public_betas_small.jpg") no-repeat center center;
+    }
+  }
+  .col.sk3{
+    height: 200px;
+    background: url("../img/swift_playground_medium.jpg") no-repeat center center;
+    @include ons{
+      background: url("../img/swift_playground_small.jpg") no-repeat center center;
+    }
+  }
+  .col.sk4{
+    height: 200px;
+    background: url("../img/bts_iphone_medium.jpg") no-repeat center center;
+    @include ons{
+      background: url("../img/bts_iphone_small.jpg") no-repeat center center;
+    }
+  }
+}
+}
+/*dibu*/
+.dibu{
+  width: 100%;
+  height: 368px;
+  padding: 15px 5%;
+  border-top: 1px solid #fff;
+  box-sizing: border-box;
+  @media screen and (max-width: 900px){
+    height: 388px;
+  }
+    .dibubox{
+      width: 100%;height: 100%;
+      padding: 0 8%;
+      box-sizing: border-box;
+
+      .wukuai{
+        width: 100%;height: 82%;
+        padding: 15px 0;
+        box-sizing: border-box;
+        &::after{
+          content: "";
+          clear: both;
+        }
+        ul{
+          width: 20%;
+          height: 70%;
+          float: left;
+          span{
+            font-family: "zitijiacu";
+            font-size: 12px;
+            color: #333;
+          }
+          li{
+            font-family: "zitizhengc";
+            font-size: 12px;
+            color: #666;
+            padding: 3px 0;
+          }
+        }
+      }
+      .lianjie{
+        width: 100%;
+        height: 18%;
+        .lianjie1{
+          width: 100%;
+          height: 50%;
+          li{
+            border-bottom: 1px solid #E3E3E3;
+            padding: 7px 0;
+            box-sizing: border-box;
+            color: #999;
+            font-size: 12px;
+            font-family: "zitizhengc";
+
+            a{
+              font-family: "zitizhengc";
+              font-size: 12px;
+              color: #0088CC;
+              &:hover{
+                color: #333;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+        .lianjie2{
+          width: 100%;
+          height: 50%;
+          @media screen and (max-width: 900px){
+            height: 70%;
+            li:nth-child(2){
+              clear: both;
+            }
+          }
+          li {
+            color: #999;
+            font-size: 12px;
+            font-family: "zitizhengc";
+            float: left;
+            padding: 7px 0;
+            box-sizing: border-box;
+
+            a{
+              margin: 1%;
+              color: #666;
+              font-size: 12px;
+              font-family: "zitizhengc";
+              &:hover{
+                color: #333;
+                text-decoration: underline;
+              }
+            }
+          }
+          .guoqi{
+            width: auto;
+            height:auto;
+            padding: 7px 0;
+            box-sizing: border-box;
+            float: right;
+            span{
+              a{
+                margin: 2%;
+                color: #666;
+                font-size: 12px;
+                font-family: "zitizhengc";
+                &:hover{
+                  color: #333;
+                  text-decoration: underline;
+                }
+              }
+            }
+
+
+          }
+        }
+      }
+
+
+    }
+
+}
+
+
+  .dbxy{
+    width: 100%;
+    height:auto;
+    padding: 5% 5%;
+    box-sizing: border-box;
+    display: none;
+    .lie{
+      border-bottom: 1px solid #e3e3e3;
+      position: relative;
+      width: 100%;
+      height:40px;
+      overflow: hidden;
+      transition: all 1s ease;
+      span{
+        display: block;
+        height:40px;
+        font-family: "zitizhengc";
+        font-size: 14px;
+        color: #333;
+        line-height: 40px;
+      }
+      li{
+        height:30px;
+        line-height: 30px;
+        font-family: "zitixi";
+        font-size: 10px;
+        color: #666;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+      &::after{
+        content:"";
+        clear: both;
+      }
+      .xyclose{
+        display:block ;
+        width: 30px;
+        height: 30px;
+        background:url("../img/2016-07-24_193516.jpg") no-repeat center center;
+        float: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: all 0.6s ease;
+      }
+      .xyclose.chazhuan{
+        transform: rotateZ(45deg);
+      }
+    }
+    .lie.chuxian{
+      padding-bottom: 40px;
+      transition:all 1s ease;
+    }
+    .xylianjie{
+      width: 100%;
+      height:auto;
+      ul{
+        border: none;
+        li{
+         height: 50px;
+          line-height:50px;
+          font-size: 12px;
+          color: #666;
+          font-family: "zitixi";
+        }
+        a{
+          font-size: 10px;
+          color: #666;
+          font-family: "zitizhengc";
+
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+      .guoqi{
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+        span{
+          margin-left: 1%;
+          font-size: 12px;
+          color: #666;
+          font-family: "zitizhengc";
+        }
+      }
+      .disp{
+        width: 100%;
+        height:auto;
+        span{
+          color: #999;
+          font-family: "zitizhengc";
+          font-size: 12px;
+        }
+      }
+      .last{
+        width: 100%;
+        height: auto;
+        ul{
+          width: 100%;
+          text-align: justify;
+        }
+        .zzhh{
+          height: auto;
+          line-height: 20px;
+          font-family: "zitixi";
+          float: left;
+          font-size: 15px;
+          a{
+            font-size: 10px;
+            color: #666;
+            font-family: "zitizhengc";
+            margin:0 10px;
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+
+        }
+        .dagezi{
+          display:inline-block;
+          width: 100%;
+          height: 1px;
+          display: none;
+        }
+      }
+    }
+
+  }
+
+
+@include ons{
+  .dibu{
+    display: none;
+  }
+  .dbxy{
+    display:block;
+  }
+}
+
+
+
+

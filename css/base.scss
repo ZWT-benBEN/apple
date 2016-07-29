@@ -1,0 +1,135 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  position: relative;
+}
+body{
+  background: #f2f2f2;
+}
+@font-face {
+  font-family: "zititubiao";
+  src:url("../font/iconfont.woff") format("woff");
+}
+.iconfont-tubiao{
+  font-family: "zititubiao";
+  font-style: normal;
+}
+
+.icon-pingguo::before{
+  content: "\e6d6";
+}
+.icon-gouwudai::before{
+  content: "\e64b";
+}
+.icon-sousuo::before{
+  content: "\e612";
+}
+@font-face {
+  font-family:"zitijixi";
+  src:url("../font/myriad-set-pro_extrathin.woff") format("woff")
+}
+.xi{
+  font-family: "ziti-jixi";
+  font-style: normal;
+}
+@font-face {
+  font-family:"zitijiacu";
+  src:url("../font/myriad-set-pro_semibold.woff") format("woff")
+}
+.cu{
+  font-family: "zitijiacu";
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"zitizhengc";
+  src:url("../font/myriad-set-pro_text.woff") format("woff")
+}
+.zhengc{
+  font-family: "zitizhengc";
+  font-style: normal;
+}
+@font-face {
+  font-family:"zitixi";
+  src:url("../font/myriad-set-pro_thin.woff") format("woff")
+}
+.jixi{
+  font-family: "zitixi";
+  font-style: normal;
+}
+
+@mixin c-align{
+  position: absolute;
+  left: 0;
+  right:0;
+  margin: auto;
+}
+@mixin v-align{
+  position: absolute;
+  top: 0;
+  bottom:0;
+  margin: auto;
+}
+@mixin juzhong{
+  position: absolute;
+  top:0;left:0;right:0;bottom: 0;
+  margin: auto;
+}
+$number:12;
+$l-size:3000px;
+$m-size:1068px;
+$s-size:736px;
+$list:(
+  "l":$l-size,
+  "m":$m-size,
+  "s":$s-size
+);
+.row{
+  position:relative;
+}
+.row::after{
+  content:"";
+  display:block;
+  height:0;
+  line-height:0;
+  clear:both;
+}
+.col{
+  float: left;
+
+}
+@mixin onm {
+  @media screen and (max-width: $m-size) {
+    @for $i from 1 through $number {
+      .col.m#{$i} {
+        width: percentage($i/$number);
+      }
+      @content;
+    }
+  }
+}
+  @mixin ons {
+    @media screen and (max-width: $s-size) {
+      @for $i from 1 through $number {
+        .col.s#{$i} {
+          width: percentage($i/$number);
+        }
+        @content;
+      }
+    }
+  }
+@each $k in map-keys($list){
+  @media screen and (max-width: map-get($list,$k)){
+    @for $i from 1 through $number{
+      .col.#{$k}#{$i}{
+        width:percentage($i/$number);
+      }
+    }
+  }
+}
+@mixin cube($size){
+    width: $size;
+  height: $size;
+}

@@ -1,0 +1,3437 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  position: relative; }
+
+body {
+  background: #f2f2f2; }
+
+@font-face {
+  font-family: "zititubiao";
+  src: url("../font/iconfont.woff") format("woff"); }
+
+.iconfont-tubiao {
+  font-family: "zititubiao";
+  font-style: normal; }
+
+.icon-pingguo::before {
+  content: "\e6d6"; }
+
+.icon-gouwudai::before {
+  content: "\e64b"; }
+
+.icon-sousuo::before {
+  content: "\e612"; }
+
+@font-face {
+  font-family: "zitijixi";
+  src: url("../font/myriad-set-pro_extrathin.woff") format("woff"); }
+
+.xi {
+  font-family: "ziti-jixi";
+  font-style: normal; }
+
+@font-face {
+  font-family: "zitijiacu";
+  src: url("../font/myriad-set-pro_semibold.woff") format("woff"); }
+
+.cu {
+  font-family: "zitijiacu";
+  font-style: normal; }
+
+@font-face {
+  font-family: "zitizhengc";
+  src: url("../font/myriad-set-pro_text.woff") format("woff"); }
+
+.zhengc {
+  font-family: "zitizhengc";
+  font-style: normal; }
+
+@font-face {
+  font-family: "zitixi";
+  src: url("../font/myriad-set-pro_thin.woff") format("woff"); }
+
+.jixi {
+  font-family: "zitixi";
+  font-style: normal; }
+
+.row {
+  position: relative; }
+
+.row::after {
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0;
+  clear: both; }
+
+.col {
+  float: left; }
+
+@media screen and (max-width: 3000px) {
+  .col.l1 {
+    width: 8.33333%; }
+  .col.l2 {
+    width: 16.66667%; }
+  .col.l3 {
+    width: 25%; }
+  .col.l4 {
+    width: 33.33333%; }
+  .col.l5 {
+    width: 41.66667%; }
+  .col.l6 {
+    width: 50%; }
+  .col.l7 {
+    width: 58.33333%; }
+  .col.l8 {
+    width: 66.66667%; }
+  .col.l9 {
+    width: 75%; }
+  .col.l10 {
+    width: 83.33333%; }
+  .col.l11 {
+    width: 91.66667%; }
+  .col.l12 {
+    width: 100%; } }
+
+@media screen and (max-width: 1068px) {
+  .col.m1 {
+    width: 8.33333%; }
+  .col.m2 {
+    width: 16.66667%; }
+  .col.m3 {
+    width: 25%; }
+  .col.m4 {
+    width: 33.33333%; }
+  .col.m5 {
+    width: 41.66667%; }
+  .col.m6 {
+    width: 50%; }
+  .col.m7 {
+    width: 58.33333%; }
+  .col.m8 {
+    width: 66.66667%; }
+  .col.m9 {
+    width: 75%; }
+  .col.m10 {
+    width: 83.33333%; }
+  .col.m11 {
+    width: 91.66667%; }
+  .col.m12 {
+    width: 100%; } }
+
+@media screen and (max-width: 736px) {
+  .col.s1 {
+    width: 8.33333%; }
+  .col.s2 {
+    width: 16.66667%; }
+  .col.s3 {
+    width: 25%; }
+  .col.s4 {
+    width: 33.33333%; }
+  .col.s5 {
+    width: 41.66667%; }
+  .col.s6 {
+    width: 50%; }
+  .col.s7 {
+    width: 58.33333%; }
+  .col.s8 {
+    width: 66.66667%; }
+  .col.s9 {
+    width: 75%; }
+  .col.s10 {
+    width: 83.33333%; }
+  .col.s11 {
+    width: 91.66667%; }
+  .col.s12 {
+    width: 100%; } }
+
+body {
+  width: 100%;
+  overflow-x: hidden; }
+  @media screen and (max-width: 1068px) {
+    body {
+      overflow-x: hidden;
+      overflow-x: hidden;
+      overflow-x: hidden;
+      overflow-x: hidden;
+      overflow-x: hidden;
+      overflow-x: hidden;
+      overflow-x: hidden;
+      overflow-x: hidden;
+      overflow-x: hidden;
+      overflow-x: hidden;
+      overflow-x: hidden;
+      overflow-x: hidden; }
+      body .col.m1 {
+        width: 8.33333%; }
+      body .col.m2 {
+        width: 16.66667%; }
+      body .col.m3 {
+        width: 25%; }
+      body .col.m4 {
+        width: 33.33333%; }
+      body .col.m5 {
+        width: 41.66667%; }
+      body .col.m6 {
+        width: 50%; }
+      body .col.m7 {
+        width: 58.33333%; }
+      body .col.m8 {
+        width: 66.66667%; }
+      body .col.m9 {
+        width: 75%; }
+      body .col.m10 {
+        width: 83.33333%; }
+      body .col.m11 {
+        width: 91.66667%; }
+      body .col.m12 {
+        width: 100%; } }
+  @media screen and (max-width: 736px) {
+    body {
+      overflow-x: hidden;
+      overflow-x: hidden;
+      overflow-x: hidden;
+      overflow-x: hidden;
+      overflow-x: hidden;
+      overflow-x: hidden;
+      overflow-x: hidden;
+      overflow-x: hidden;
+      overflow-x: hidden;
+      overflow-x: hidden;
+      overflow-x: hidden;
+      overflow-x: hidden; }
+      body .col.s1 {
+        width: 8.33333%; }
+      body .col.s2 {
+        width: 16.66667%; }
+      body .col.s3 {
+        width: 25%; }
+      body .col.s4 {
+        width: 33.33333%; }
+      body .col.s5 {
+        width: 41.66667%; }
+      body .col.s6 {
+        width: 50%; }
+      body .col.s7 {
+        width: 58.33333%; }
+      body .col.s8 {
+        width: 66.66667%; }
+      body .col.s9 {
+        width: 75%; }
+      body .col.s10 {
+        width: 83.33333%; }
+      body .col.s11 {
+        width: 91.66667%; }
+      body .col.s12 {
+        width: 100%; } }
+
+@keyframes pao {
+  0% {
+    transform: translateX(100px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+.header {
+  width: 100%;
+  height: 44px;
+  background: #292929;
+  color: #fff;
+  position: relative;
+  z-index: 10; }
+  .header .zhezhao {
+    width: 100%;
+    height: 1000px;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    display: none; }
+    @media screen and (max-width: 736px) {
+      .header .zhezhao {
+        height: 0;
+        height: 0;
+        height: 0;
+        height: 0;
+        height: 0;
+        height: 0;
+        height: 0;
+        height: 0;
+        height: 0;
+        height: 0;
+        height: 0;
+        height: 0; }
+        .header .zhezhao .col.s1 {
+          width: 8.33333%; }
+        .header .zhezhao .col.s2 {
+          width: 16.66667%; }
+        .header .zhezhao .col.s3 {
+          width: 25%; }
+        .header .zhezhao .col.s4 {
+          width: 33.33333%; }
+        .header .zhezhao .col.s5 {
+          width: 41.66667%; }
+        .header .zhezhao .col.s6 {
+          width: 50%; }
+        .header .zhezhao .col.s7 {
+          width: 58.33333%; }
+        .header .zhezhao .col.s8 {
+          width: 66.66667%; }
+        .header .zhezhao .col.s9 {
+          width: 75%; }
+        .header .zhezhao .col.s10 {
+          width: 83.33333%; }
+        .header .zhezhao .col.s11 {
+          width: 91.66667%; }
+        .header .zhezhao .col.s12 {
+          width: 100%; } }
+  .header .top {
+    max-width: 1024px;
+    height: 44px;
+    margin: 0 auto;
+    box-sizing: border-box; }
+    .header .top .nav {
+      transition: all .8s ease;
+      height: 44px;
+      text-align: justify; }
+      .header .top .nav li {
+        width: auto;
+        height: 44px;
+        display: inline-block;
+        padding: 0 20px; }
+        .header .top .nav li:hover {
+          opacity: 0.6; }
+        .header .top .nav li a {
+          display: block;
+          height: 44px;
+          padding: 0 20px;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto; }
+          .header .top .nav li a span {
+            font-size: 0;
+            height: 0;
+            line-height: 0; }
+      .header .top .nav .logo {
+        width: 20px;
+        background: url(../img/logo.svg) no-repeat center center; }
+      .header .top .nav::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 0;
+        line-height: 0;
+        opacity: 0; }
+      .header .top .nav .mac {
+        width: 20px;
+        background: url(../img/mac.svg) no-repeat center center; }
+      .header .top .nav::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 0;
+        line-height: 0;
+        opacity: 0; }
+      .header .top .nav .ipad {
+        width: 20px;
+        background: url(../img/ipad.svg) no-repeat center center; }
+      .header .top .nav::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 0;
+        line-height: 0;
+        opacity: 0; }
+      .header .top .nav .iphone {
+        width: 20px;
+        background: url(../img/iphone.svg) no-repeat center center; }
+      .header .top .nav::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 0;
+        line-height: 0;
+        opacity: 0; }
+      .header .top .nav .watch {
+        width: 20px;
+        background: url(../img/watch.svg) no-repeat center center; }
+      .header .top .nav::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 0;
+        line-height: 0;
+        opacity: 0; }
+      .header .top .nav .tv {
+        width: 20px;
+        background: url(../img/tv.svg) no-repeat center center; }
+      .header .top .nav::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 0;
+        line-height: 0;
+        opacity: 0; }
+      .header .top .nav .music {
+        width: 20px;
+        background: url(../img/music.svg) no-repeat center center; }
+      .header .top .nav::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 0;
+        line-height: 0;
+        opacity: 0; }
+      .header .top .nav .support {
+        width: 20px;
+        background: url(../img/support.svg) no-repeat center center; }
+      .header .top .nav::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 0;
+        line-height: 0;
+        opacity: 0; }
+      .header .top .nav .search {
+        width: 20px;
+        background: url(../img/search.svg) no-repeat center center; }
+      .header .top .nav::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 0;
+        line-height: 0;
+        opacity: 0; }
+      .header .top .nav .bag {
+        width: 20px;
+        background: url(../img/bag.svg) no-repeat center center; }
+      .header .top .nav::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 0;
+        line-height: 0;
+        opacity: 0; }
+      .header .top .nav .bag.close {
+        background: url("../img/guanbi.jpg") no-repeat center center; }
+    .header .top .search-box {
+      width: 600px;
+      height: 44px;
+      box-sizing: border-box;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 0;
+      transition: all .6s ease;
+      transform: translateX(1000px); }
+      .header .top .search-box span {
+        display: block;
+        width: 44px;
+        height: 44px;
+        float: left;
+        background: url("../img/search.svg") no-repeat center center; }
+      .header .top .search-box input {
+        width: 500px;
+        height: 44px;
+        padding: 0;
+        margin: 0;
+        color: #fff;
+        font-size: 14px;
+        list-style: none;
+        background: none;
+        border: none;
+        font-family: zitizhengc;
+        font-size: 18px;
+        outline: medium; }
+      .header .top .search-box .xiala {
+        position: relative;
+        z-index: 20;
+        width: 100%;
+        height: 0px;
+        background: #fff;
+        box-sizing: border-box;
+        font-size: 14px;
+        font-family: "ziti-jixi";
+        color: #acacac;
+        transition: all .4s ease; }
+        .header .top .search-box .xiala p {
+          width: 100%;
+          padding: 10px 10px;
+          opacity: 0;
+          transition: all .4s ease; }
+        .header .top .search-box .xiala li {
+          width: 100%;
+          box-sizing: border-box;
+          font-family: "zitizhengc";
+          font-size: 16px;
+          opacity: 0;
+          transition: all 1.6s ease; }
+          .header .top .search-box .xiala li a {
+            display: block;
+            padding: 6px 30px;
+            list-style: none;
+            color: #acacac; }
+            .header .top .search-box .xiala li a:hover {
+              background: #f2f2f2;
+              color: #0188CC; }
+    .header .top .search-box.active {
+      display: block;
+      transform: translateX(0); }
+      .header .top .search-box.active .xiala {
+        height: 230px;
+        padding: 20px 20px;
+        transition: all .4s ease .8s; }
+        .header .top .search-box.active .xiala p {
+          animation: pao .4s ease 1s forwards; }
+        .header .top .search-box.active .xiala li:nth-of-type(1) {
+          animation: pao .4s ease 1.2s forwards; }
+        .header .top .search-box.active .xiala li:nth-of-type(2) {
+          animation: pao .4s ease 1.4s forwards; }
+        .header .top .search-box.active .xiala li:nth-of-type(3) {
+          animation: pao .4s ease 1.6s forwards; }
+        .header .top .search-box.active .xiala li:nth-of-type(4) {
+          animation: pao .4s ease 1.8s forwards; }
+        .header .top .search-box.active .xiala li:nth-of-type(5) {
+          animation: pao .4s ease 2s forwards; }
+    .header .top .nav-phone {
+      display: none;
+      padding: 0 10px; }
+      .header .top .nav-phone .menu a {
+        display: block;
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        left: 0;
+        margin: 0; }
+        .header .top .nav-phone .menu a:hover {
+          opacity: 0.6; }
+      .header .top .nav-phone .menu .hang, .header .top .nav-phone .menu .shu {
+        width: 17px;
+        height: 1px;
+        background: #fff;
+        position: relative;
+        transition: all 0.3s ease;
+        transform-origin: 20%; }
+      .header .top .nav-phone .menu .hang {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 20px; }
+      .header .top .nav-phone .menu .shu {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 20px; }
+      .header .top .nav-phone .menu.change .hang {
+        transform: rotateZ(45deg); }
+      .header .top .nav-phone .menu.change .shu {
+        transform: rotateZ(-45deg); }
+      .header .top .nav-phone .logo a {
+        width: 48px;
+        height: 48px;
+        background: url(../img/logo.svg) no-repeat center center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto; }
+        .header .top .nav-phone .logo a:hover {
+          opacity: 0.6; }
+      .header .top .nav-phone .bag a {
+        width: 48px;
+        height: 48px;
+        background: url(../img/bag.svg) no-repeat center center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 0;
+        margin: 0; }
+        .header .top .nav-phone .bag a:hover {
+          opacity: 0.6; }
+
+@media screen and (max-width: 736px) {
+  .col.s1 {
+    width: 8.33333%; }
+  .header {
+    height: 48px; }
+    .header .top {
+      height: 48px;
+      background: #000; }
+      .header .top .nav {
+        display: none; }
+      .header .top .nav-phone {
+        display: block; }
+      .header .top .search-box.active {
+        display: none; }
+  .header-xy {
+    width: 100%;
+    height: 1000px;
+    background: #000;
+    display: none;
+    padding: 20px 0;
+    position: absolute; }
+    .header-xy li {
+      transition: all 0.8s ease;
+      padding: 0 60px;
+      opacity: 0; }
+      .header-xy li span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 15px 0;
+        color: #fff;
+        font-family: zitizhengc;
+        border-bottom: 1px solid #fff;
+        font-size: 22px; }
+        .header-xy li span:hover {
+          opacity: 0.7; }
+      .header-xy li a {
+        padding: 15px 0;
+        border-bottom: 1px solid #333;
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: #fff;
+        font-family: zitixi;
+        font-size: 20px; }
+        .header-xy li a:hover {
+          opacity: 0.7; }
+    .header-xy li:nth-child(1) {
+      animation: luo .8s ease .2s forwards; }
+    .header-xy li:nth-child(2) {
+      animation: luo .8s ease .3s forwards; }
+    .header-xy li:nth-child(3) {
+      animation: luo .8s ease .4s forwards; }
+    .header-xy li:nth-child(4) {
+      animation: luo .8s ease .5s forwards; }
+    .header-xy li:nth-child(5) {
+      animation: luo .8s ease .6s forwards; }
+    .header-xy li:nth-child(6) {
+      animation: luo .8s ease .7s forwards; }
+    .header-xy li:nth-child(7) {
+      animation: luo .8s ease .8s forwards; }
+    .header-xy li:nth-child(8) {
+      animation: luo .8s ease .9s forwards; }
+  .col.s2 {
+    width: 16.66667%; }
+  .header {
+    height: 48px; }
+    .header .top {
+      height: 48px;
+      background: #000; }
+      .header .top .nav {
+        display: none; }
+      .header .top .nav-phone {
+        display: block; }
+      .header .top .search-box.active {
+        display: none; }
+  .header-xy {
+    width: 100%;
+    height: 1000px;
+    background: #000;
+    display: none;
+    padding: 20px 0;
+    position: absolute; }
+    .header-xy li {
+      transition: all 0.8s ease;
+      padding: 0 60px;
+      opacity: 0; }
+      .header-xy li span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 15px 0;
+        color: #fff;
+        font-family: zitizhengc;
+        border-bottom: 1px solid #fff;
+        font-size: 22px; }
+        .header-xy li span:hover {
+          opacity: 0.7; }
+      .header-xy li a {
+        padding: 15px 0;
+        border-bottom: 1px solid #333;
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: #fff;
+        font-family: zitixi;
+        font-size: 20px; }
+        .header-xy li a:hover {
+          opacity: 0.7; }
+    .header-xy li:nth-child(1) {
+      animation: luo .8s ease .2s forwards; }
+    .header-xy li:nth-child(2) {
+      animation: luo .8s ease .3s forwards; }
+    .header-xy li:nth-child(3) {
+      animation: luo .8s ease .4s forwards; }
+    .header-xy li:nth-child(4) {
+      animation: luo .8s ease .5s forwards; }
+    .header-xy li:nth-child(5) {
+      animation: luo .8s ease .6s forwards; }
+    .header-xy li:nth-child(6) {
+      animation: luo .8s ease .7s forwards; }
+    .header-xy li:nth-child(7) {
+      animation: luo .8s ease .8s forwards; }
+    .header-xy li:nth-child(8) {
+      animation: luo .8s ease .9s forwards; }
+  .col.s3 {
+    width: 25%; }
+  .header {
+    height: 48px; }
+    .header .top {
+      height: 48px;
+      background: #000; }
+      .header .top .nav {
+        display: none; }
+      .header .top .nav-phone {
+        display: block; }
+      .header .top .search-box.active {
+        display: none; }
+  .header-xy {
+    width: 100%;
+    height: 1000px;
+    background: #000;
+    display: none;
+    padding: 20px 0;
+    position: absolute; }
+    .header-xy li {
+      transition: all 0.8s ease;
+      padding: 0 60px;
+      opacity: 0; }
+      .header-xy li span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 15px 0;
+        color: #fff;
+        font-family: zitizhengc;
+        border-bottom: 1px solid #fff;
+        font-size: 22px; }
+        .header-xy li span:hover {
+          opacity: 0.7; }
+      .header-xy li a {
+        padding: 15px 0;
+        border-bottom: 1px solid #333;
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: #fff;
+        font-family: zitixi;
+        font-size: 20px; }
+        .header-xy li a:hover {
+          opacity: 0.7; }
+    .header-xy li:nth-child(1) {
+      animation: luo .8s ease .2s forwards; }
+    .header-xy li:nth-child(2) {
+      animation: luo .8s ease .3s forwards; }
+    .header-xy li:nth-child(3) {
+      animation: luo .8s ease .4s forwards; }
+    .header-xy li:nth-child(4) {
+      animation: luo .8s ease .5s forwards; }
+    .header-xy li:nth-child(5) {
+      animation: luo .8s ease .6s forwards; }
+    .header-xy li:nth-child(6) {
+      animation: luo .8s ease .7s forwards; }
+    .header-xy li:nth-child(7) {
+      animation: luo .8s ease .8s forwards; }
+    .header-xy li:nth-child(8) {
+      animation: luo .8s ease .9s forwards; }
+  .col.s4 {
+    width: 33.33333%; }
+  .header {
+    height: 48px; }
+    .header .top {
+      height: 48px;
+      background: #000; }
+      .header .top .nav {
+        display: none; }
+      .header .top .nav-phone {
+        display: block; }
+      .header .top .search-box.active {
+        display: none; }
+  .header-xy {
+    width: 100%;
+    height: 1000px;
+    background: #000;
+    display: none;
+    padding: 20px 0;
+    position: absolute; }
+    .header-xy li {
+      transition: all 0.8s ease;
+      padding: 0 60px;
+      opacity: 0; }
+      .header-xy li span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 15px 0;
+        color: #fff;
+        font-family: zitizhengc;
+        border-bottom: 1px solid #fff;
+        font-size: 22px; }
+        .header-xy li span:hover {
+          opacity: 0.7; }
+      .header-xy li a {
+        padding: 15px 0;
+        border-bottom: 1px solid #333;
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: #fff;
+        font-family: zitixi;
+        font-size: 20px; }
+        .header-xy li a:hover {
+          opacity: 0.7; }
+    .header-xy li:nth-child(1) {
+      animation: luo .8s ease .2s forwards; }
+    .header-xy li:nth-child(2) {
+      animation: luo .8s ease .3s forwards; }
+    .header-xy li:nth-child(3) {
+      animation: luo .8s ease .4s forwards; }
+    .header-xy li:nth-child(4) {
+      animation: luo .8s ease .5s forwards; }
+    .header-xy li:nth-child(5) {
+      animation: luo .8s ease .6s forwards; }
+    .header-xy li:nth-child(6) {
+      animation: luo .8s ease .7s forwards; }
+    .header-xy li:nth-child(7) {
+      animation: luo .8s ease .8s forwards; }
+    .header-xy li:nth-child(8) {
+      animation: luo .8s ease .9s forwards; }
+  .col.s5 {
+    width: 41.66667%; }
+  .header {
+    height: 48px; }
+    .header .top {
+      height: 48px;
+      background: #000; }
+      .header .top .nav {
+        display: none; }
+      .header .top .nav-phone {
+        display: block; }
+      .header .top .search-box.active {
+        display: none; }
+  .header-xy {
+    width: 100%;
+    height: 1000px;
+    background: #000;
+    display: none;
+    padding: 20px 0;
+    position: absolute; }
+    .header-xy li {
+      transition: all 0.8s ease;
+      padding: 0 60px;
+      opacity: 0; }
+      .header-xy li span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 15px 0;
+        color: #fff;
+        font-family: zitizhengc;
+        border-bottom: 1px solid #fff;
+        font-size: 22px; }
+        .header-xy li span:hover {
+          opacity: 0.7; }
+      .header-xy li a {
+        padding: 15px 0;
+        border-bottom: 1px solid #333;
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: #fff;
+        font-family: zitixi;
+        font-size: 20px; }
+        .header-xy li a:hover {
+          opacity: 0.7; }
+    .header-xy li:nth-child(1) {
+      animation: luo .8s ease .2s forwards; }
+    .header-xy li:nth-child(2) {
+      animation: luo .8s ease .3s forwards; }
+    .header-xy li:nth-child(3) {
+      animation: luo .8s ease .4s forwards; }
+    .header-xy li:nth-child(4) {
+      animation: luo .8s ease .5s forwards; }
+    .header-xy li:nth-child(5) {
+      animation: luo .8s ease .6s forwards; }
+    .header-xy li:nth-child(6) {
+      animation: luo .8s ease .7s forwards; }
+    .header-xy li:nth-child(7) {
+      animation: luo .8s ease .8s forwards; }
+    .header-xy li:nth-child(8) {
+      animation: luo .8s ease .9s forwards; }
+  .col.s6 {
+    width: 50%; }
+  .header {
+    height: 48px; }
+    .header .top {
+      height: 48px;
+      background: #000; }
+      .header .top .nav {
+        display: none; }
+      .header .top .nav-phone {
+        display: block; }
+      .header .top .search-box.active {
+        display: none; }
+  .header-xy {
+    width: 100%;
+    height: 1000px;
+    background: #000;
+    display: none;
+    padding: 20px 0;
+    position: absolute; }
+    .header-xy li {
+      transition: all 0.8s ease;
+      padding: 0 60px;
+      opacity: 0; }
+      .header-xy li span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 15px 0;
+        color: #fff;
+        font-family: zitizhengc;
+        border-bottom: 1px solid #fff;
+        font-size: 22px; }
+        .header-xy li span:hover {
+          opacity: 0.7; }
+      .header-xy li a {
+        padding: 15px 0;
+        border-bottom: 1px solid #333;
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: #fff;
+        font-family: zitixi;
+        font-size: 20px; }
+        .header-xy li a:hover {
+          opacity: 0.7; }
+    .header-xy li:nth-child(1) {
+      animation: luo .8s ease .2s forwards; }
+    .header-xy li:nth-child(2) {
+      animation: luo .8s ease .3s forwards; }
+    .header-xy li:nth-child(3) {
+      animation: luo .8s ease .4s forwards; }
+    .header-xy li:nth-child(4) {
+      animation: luo .8s ease .5s forwards; }
+    .header-xy li:nth-child(5) {
+      animation: luo .8s ease .6s forwards; }
+    .header-xy li:nth-child(6) {
+      animation: luo .8s ease .7s forwards; }
+    .header-xy li:nth-child(7) {
+      animation: luo .8s ease .8s forwards; }
+    .header-xy li:nth-child(8) {
+      animation: luo .8s ease .9s forwards; }
+  .col.s7 {
+    width: 58.33333%; }
+  .header {
+    height: 48px; }
+    .header .top {
+      height: 48px;
+      background: #000; }
+      .header .top .nav {
+        display: none; }
+      .header .top .nav-phone {
+        display: block; }
+      .header .top .search-box.active {
+        display: none; }
+  .header-xy {
+    width: 100%;
+    height: 1000px;
+    background: #000;
+    display: none;
+    padding: 20px 0;
+    position: absolute; }
+    .header-xy li {
+      transition: all 0.8s ease;
+      padding: 0 60px;
+      opacity: 0; }
+      .header-xy li span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 15px 0;
+        color: #fff;
+        font-family: zitizhengc;
+        border-bottom: 1px solid #fff;
+        font-size: 22px; }
+        .header-xy li span:hover {
+          opacity: 0.7; }
+      .header-xy li a {
+        padding: 15px 0;
+        border-bottom: 1px solid #333;
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: #fff;
+        font-family: zitixi;
+        font-size: 20px; }
+        .header-xy li a:hover {
+          opacity: 0.7; }
+    .header-xy li:nth-child(1) {
+      animation: luo .8s ease .2s forwards; }
+    .header-xy li:nth-child(2) {
+      animation: luo .8s ease .3s forwards; }
+    .header-xy li:nth-child(3) {
+      animation: luo .8s ease .4s forwards; }
+    .header-xy li:nth-child(4) {
+      animation: luo .8s ease .5s forwards; }
+    .header-xy li:nth-child(5) {
+      animation: luo .8s ease .6s forwards; }
+    .header-xy li:nth-child(6) {
+      animation: luo .8s ease .7s forwards; }
+    .header-xy li:nth-child(7) {
+      animation: luo .8s ease .8s forwards; }
+    .header-xy li:nth-child(8) {
+      animation: luo .8s ease .9s forwards; }
+  .col.s8 {
+    width: 66.66667%; }
+  .header {
+    height: 48px; }
+    .header .top {
+      height: 48px;
+      background: #000; }
+      .header .top .nav {
+        display: none; }
+      .header .top .nav-phone {
+        display: block; }
+      .header .top .search-box.active {
+        display: none; }
+  .header-xy {
+    width: 100%;
+    height: 1000px;
+    background: #000;
+    display: none;
+    padding: 20px 0;
+    position: absolute; }
+    .header-xy li {
+      transition: all 0.8s ease;
+      padding: 0 60px;
+      opacity: 0; }
+      .header-xy li span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 15px 0;
+        color: #fff;
+        font-family: zitizhengc;
+        border-bottom: 1px solid #fff;
+        font-size: 22px; }
+        .header-xy li span:hover {
+          opacity: 0.7; }
+      .header-xy li a {
+        padding: 15px 0;
+        border-bottom: 1px solid #333;
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: #fff;
+        font-family: zitixi;
+        font-size: 20px; }
+        .header-xy li a:hover {
+          opacity: 0.7; }
+    .header-xy li:nth-child(1) {
+      animation: luo .8s ease .2s forwards; }
+    .header-xy li:nth-child(2) {
+      animation: luo .8s ease .3s forwards; }
+    .header-xy li:nth-child(3) {
+      animation: luo .8s ease .4s forwards; }
+    .header-xy li:nth-child(4) {
+      animation: luo .8s ease .5s forwards; }
+    .header-xy li:nth-child(5) {
+      animation: luo .8s ease .6s forwards; }
+    .header-xy li:nth-child(6) {
+      animation: luo .8s ease .7s forwards; }
+    .header-xy li:nth-child(7) {
+      animation: luo .8s ease .8s forwards; }
+    .header-xy li:nth-child(8) {
+      animation: luo .8s ease .9s forwards; }
+  .col.s9 {
+    width: 75%; }
+  .header {
+    height: 48px; }
+    .header .top {
+      height: 48px;
+      background: #000; }
+      .header .top .nav {
+        display: none; }
+      .header .top .nav-phone {
+        display: block; }
+      .header .top .search-box.active {
+        display: none; }
+  .header-xy {
+    width: 100%;
+    height: 1000px;
+    background: #000;
+    display: none;
+    padding: 20px 0;
+    position: absolute; }
+    .header-xy li {
+      transition: all 0.8s ease;
+      padding: 0 60px;
+      opacity: 0; }
+      .header-xy li span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 15px 0;
+        color: #fff;
+        font-family: zitizhengc;
+        border-bottom: 1px solid #fff;
+        font-size: 22px; }
+        .header-xy li span:hover {
+          opacity: 0.7; }
+      .header-xy li a {
+        padding: 15px 0;
+        border-bottom: 1px solid #333;
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: #fff;
+        font-family: zitixi;
+        font-size: 20px; }
+        .header-xy li a:hover {
+          opacity: 0.7; }
+    .header-xy li:nth-child(1) {
+      animation: luo .8s ease .2s forwards; }
+    .header-xy li:nth-child(2) {
+      animation: luo .8s ease .3s forwards; }
+    .header-xy li:nth-child(3) {
+      animation: luo .8s ease .4s forwards; }
+    .header-xy li:nth-child(4) {
+      animation: luo .8s ease .5s forwards; }
+    .header-xy li:nth-child(5) {
+      animation: luo .8s ease .6s forwards; }
+    .header-xy li:nth-child(6) {
+      animation: luo .8s ease .7s forwards; }
+    .header-xy li:nth-child(7) {
+      animation: luo .8s ease .8s forwards; }
+    .header-xy li:nth-child(8) {
+      animation: luo .8s ease .9s forwards; }
+  .col.s10 {
+    width: 83.33333%; }
+  .header {
+    height: 48px; }
+    .header .top {
+      height: 48px;
+      background: #000; }
+      .header .top .nav {
+        display: none; }
+      .header .top .nav-phone {
+        display: block; }
+      .header .top .search-box.active {
+        display: none; }
+  .header-xy {
+    width: 100%;
+    height: 1000px;
+    background: #000;
+    display: none;
+    padding: 20px 0;
+    position: absolute; }
+    .header-xy li {
+      transition: all 0.8s ease;
+      padding: 0 60px;
+      opacity: 0; }
+      .header-xy li span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 15px 0;
+        color: #fff;
+        font-family: zitizhengc;
+        border-bottom: 1px solid #fff;
+        font-size: 22px; }
+        .header-xy li span:hover {
+          opacity: 0.7; }
+      .header-xy li a {
+        padding: 15px 0;
+        border-bottom: 1px solid #333;
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: #fff;
+        font-family: zitixi;
+        font-size: 20px; }
+        .header-xy li a:hover {
+          opacity: 0.7; }
+    .header-xy li:nth-child(1) {
+      animation: luo .8s ease .2s forwards; }
+    .header-xy li:nth-child(2) {
+      animation: luo .8s ease .3s forwards; }
+    .header-xy li:nth-child(3) {
+      animation: luo .8s ease .4s forwards; }
+    .header-xy li:nth-child(4) {
+      animation: luo .8s ease .5s forwards; }
+    .header-xy li:nth-child(5) {
+      animation: luo .8s ease .6s forwards; }
+    .header-xy li:nth-child(6) {
+      animation: luo .8s ease .7s forwards; }
+    .header-xy li:nth-child(7) {
+      animation: luo .8s ease .8s forwards; }
+    .header-xy li:nth-child(8) {
+      animation: luo .8s ease .9s forwards; }
+  .col.s11 {
+    width: 91.66667%; }
+  .header {
+    height: 48px; }
+    .header .top {
+      height: 48px;
+      background: #000; }
+      .header .top .nav {
+        display: none; }
+      .header .top .nav-phone {
+        display: block; }
+      .header .top .search-box.active {
+        display: none; }
+  .header-xy {
+    width: 100%;
+    height: 1000px;
+    background: #000;
+    display: none;
+    padding: 20px 0;
+    position: absolute; }
+    .header-xy li {
+      transition: all 0.8s ease;
+      padding: 0 60px;
+      opacity: 0; }
+      .header-xy li span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 15px 0;
+        color: #fff;
+        font-family: zitizhengc;
+        border-bottom: 1px solid #fff;
+        font-size: 22px; }
+        .header-xy li span:hover {
+          opacity: 0.7; }
+      .header-xy li a {
+        padding: 15px 0;
+        border-bottom: 1px solid #333;
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: #fff;
+        font-family: zitixi;
+        font-size: 20px; }
+        .header-xy li a:hover {
+          opacity: 0.7; }
+    .header-xy li:nth-child(1) {
+      animation: luo .8s ease .2s forwards; }
+    .header-xy li:nth-child(2) {
+      animation: luo .8s ease .3s forwards; }
+    .header-xy li:nth-child(3) {
+      animation: luo .8s ease .4s forwards; }
+    .header-xy li:nth-child(4) {
+      animation: luo .8s ease .5s forwards; }
+    .header-xy li:nth-child(5) {
+      animation: luo .8s ease .6s forwards; }
+    .header-xy li:nth-child(6) {
+      animation: luo .8s ease .7s forwards; }
+    .header-xy li:nth-child(7) {
+      animation: luo .8s ease .8s forwards; }
+    .header-xy li:nth-child(8) {
+      animation: luo .8s ease .9s forwards; }
+  .col.s12 {
+    width: 100%; }
+  .header {
+    height: 48px; }
+    .header .top {
+      height: 48px;
+      background: #000; }
+      .header .top .nav {
+        display: none; }
+      .header .top .nav-phone {
+        display: block; }
+      .header .top .search-box.active {
+        display: none; }
+  .header-xy {
+    width: 100%;
+    height: 1000px;
+    background: #000;
+    display: none;
+    padding: 20px 0;
+    position: absolute; }
+    .header-xy li {
+      transition: all 0.8s ease;
+      padding: 0 60px;
+      opacity: 0; }
+      .header-xy li span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 15px 0;
+        color: #fff;
+        font-family: zitizhengc;
+        border-bottom: 1px solid #fff;
+        font-size: 22px; }
+        .header-xy li span:hover {
+          opacity: 0.7; }
+      .header-xy li a {
+        padding: 15px 0;
+        border-bottom: 1px solid #333;
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: #fff;
+        font-family: zitixi;
+        font-size: 20px; }
+        .header-xy li a:hover {
+          opacity: 0.7; }
+    .header-xy li:nth-child(1) {
+      animation: luo .8s ease .2s forwards; }
+    .header-xy li:nth-child(2) {
+      animation: luo .8s ease .3s forwards; }
+    .header-xy li:nth-child(3) {
+      animation: luo .8s ease .4s forwards; }
+    .header-xy li:nth-child(4) {
+      animation: luo .8s ease .5s forwards; }
+    .header-xy li:nth-child(5) {
+      animation: luo .8s ease .6s forwards; }
+    .header-xy li:nth-child(6) {
+      animation: luo .8s ease .7s forwards; }
+    .header-xy li:nth-child(7) {
+      animation: luo .8s ease .8s forwards; }
+    .header-xy li:nth-child(8) {
+      animation: luo .8s ease .9s forwards; } }
+
+@keyframes luo {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@media screen and (min-width: 736px) {
+  .header-xy {
+    opacity: 0;
+    height: 0;
+    display: none; } }
+
+.bannerbox {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden; }
+  .bannerbox .banner {
+    width: 100%;
+    height: 606px;
+    background: #fff;
+    position: relative;
+    overflow-x: hidden;
+    cursor: pointer; }
+    @media screen and (max-width: 736px) {
+      .bannerbox .banner {
+        height: 508px;
+        height: 508px;
+        height: 508px;
+        height: 508px;
+        height: 508px;
+        height: 508px;
+        height: 508px;
+        height: 508px;
+        height: 508px;
+        height: 508px;
+        height: 508px;
+        height: 508px; }
+        .bannerbox .banner .col.s1 {
+          width: 8.33333%; }
+        .bannerbox .banner .col.s2 {
+          width: 16.66667%; }
+        .bannerbox .banner .col.s3 {
+          width: 25%; }
+        .bannerbox .banner .col.s4 {
+          width: 33.33333%; }
+        .bannerbox .banner .col.s5 {
+          width: 41.66667%; }
+        .bannerbox .banner .col.s6 {
+          width: 50%; }
+        .bannerbox .banner .col.s7 {
+          width: 58.33333%; }
+        .bannerbox .banner .col.s8 {
+          width: 66.66667%; }
+        .bannerbox .banner .col.s9 {
+          width: 75%; }
+        .bannerbox .banner .col.s10 {
+          width: 83.33333%; }
+        .bannerbox .banner .col.s11 {
+          width: 91.66667%; }
+        .bannerbox .banner .col.s12 {
+          width: 100%; } }
+    .bannerbox .banner .zuo {
+      display: none;
+      cursor: pointer;
+      width: 65px;
+      height: 112px;
+      background: url("../img/zuo.png");
+      z-index: 10;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: 20px; }
+    .bannerbox .banner .you {
+      cursor: pointer;
+      display: none;
+      width: 65px;
+      height: 112px;
+      background: url("../img/you.png");
+      z-index: 10;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      right: 20px; }
+    .bannerbox .banner .lunbo {
+      width: 100%;
+      height: 606px;
+      /* li.lb-activexy{
+         transform: translateX(0);
+       }
+       li.lb-activexz{
+         transform: translateX(-100%);
+       }*/
+      /*@keyframes lunbomove {
+        0%{
+          transform: translateX(100%);
+        }
+        100%{
+          transform: translateX(0);
+        }
+      }*/ }
+      @media screen and (max-width: 736px) {
+        .bannerbox .banner .lunbo {
+          height: 508px;
+          height: 508px;
+          height: 508px;
+          height: 508px;
+          height: 508px;
+          height: 508px;
+          height: 508px;
+          height: 508px;
+          height: 508px;
+          height: 508px;
+          height: 508px;
+          height: 508px; }
+          .bannerbox .banner .lunbo .col.s1 {
+            width: 8.33333%; }
+          .bannerbox .banner .lunbo .col.s2 {
+            width: 16.66667%; }
+          .bannerbox .banner .lunbo .col.s3 {
+            width: 25%; }
+          .bannerbox .banner .lunbo .col.s4 {
+            width: 33.33333%; }
+          .bannerbox .banner .lunbo .col.s5 {
+            width: 41.66667%; }
+          .bannerbox .banner .lunbo .col.s6 {
+            width: 50%; }
+          .bannerbox .banner .lunbo .col.s7 {
+            width: 58.33333%; }
+          .bannerbox .banner .lunbo .col.s8 {
+            width: 66.66667%; }
+          .bannerbox .banner .lunbo .col.s9 {
+            width: 75%; }
+          .bannerbox .banner .lunbo .col.s10 {
+            width: 83.33333%; }
+          .bannerbox .banner .lunbo .col.s11 {
+            width: 91.66667%; }
+          .bannerbox .banner .lunbo .col.s12 {
+            width: 100%; } }
+      .bannerbox .banner .lunbo li {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        /*transform:translateX(100%);*/ }
+        .bannerbox .banner .lunbo li a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          color: #333; }
+      .bannerbox .banner .lunbo li:nth-child(1) {
+        /* transform: translateX(0);*/ }
+        .bannerbox .banner .lunbo li:nth-child(1) a {
+          background: url("../img/iphone_6s_medium.jpg") no-repeat bottom center; }
+          @media screen and (max-width: 736px) {
+            .bannerbox .banner .lunbo li:nth-child(1) a {
+              background: url("../img/iphone_6s_small.jpg") no-repeat 50% 90%;
+              background: url("../img/iphone_6s_small.jpg") no-repeat 50% 90%;
+              background: url("../img/iphone_6s_small.jpg") no-repeat 50% 90%;
+              background: url("../img/iphone_6s_small.jpg") no-repeat 50% 90%;
+              background: url("../img/iphone_6s_small.jpg") no-repeat 50% 90%;
+              background: url("../img/iphone_6s_small.jpg") no-repeat 50% 90%;
+              background: url("../img/iphone_6s_small.jpg") no-repeat 50% 90%;
+              background: url("../img/iphone_6s_small.jpg") no-repeat 50% 90%;
+              background: url("../img/iphone_6s_small.jpg") no-repeat 50% 90%;
+              background: url("../img/iphone_6s_small.jpg") no-repeat 50% 90%;
+              background: url("../img/iphone_6s_small.jpg") no-repeat 50% 90%;
+              background: url("../img/iphone_6s_small.jpg") no-repeat 50% 90%; }
+              .bannerbox .banner .lunbo li:nth-child(1) a .col.s1 {
+                width: 8.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(1) a .col.s2 {
+                width: 16.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(1) a .col.s3 {
+                width: 25%; }
+              .bannerbox .banner .lunbo li:nth-child(1) a .col.s4 {
+                width: 33.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(1) a .col.s5 {
+                width: 41.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(1) a .col.s6 {
+                width: 50%; }
+              .bannerbox .banner .lunbo li:nth-child(1) a .col.s7 {
+                width: 58.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(1) a .col.s8 {
+                width: 66.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(1) a .col.s9 {
+                width: 75%; }
+              .bannerbox .banner .lunbo li:nth-child(1) a .col.s10 {
+                width: 83.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(1) a .col.s11 {
+                width: 91.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(1) a .col.s12 {
+                width: 100%; } }
+        .bannerbox .banner .lunbo li:nth-child(1) .iphonebox {
+          width: 100%;
+          height: 260px;
+          text-align: center;
+          font-family: zitixi;
+          font-size: 30px; }
+          @media screen and (max-width: 736px) {
+            .bannerbox .banner .lunbo li:nth-child(1) .iphonebox {
+              height: 320px;
+              font-size: 24px;
+              top: 60px;
+              height: 320px;
+              font-size: 24px;
+              top: 60px;
+              height: 320px;
+              font-size: 24px;
+              top: 60px;
+              height: 320px;
+              font-size: 24px;
+              top: 60px;
+              height: 320px;
+              font-size: 24px;
+              top: 60px;
+              height: 320px;
+              font-size: 24px;
+              top: 60px;
+              height: 320px;
+              font-size: 24px;
+              top: 60px;
+              height: 320px;
+              font-size: 24px;
+              top: 60px;
+              height: 320px;
+              font-size: 24px;
+              top: 60px;
+              height: 320px;
+              font-size: 24px;
+              top: 60px;
+              height: 320px;
+              font-size: 24px;
+              top: 60px;
+              height: 320px;
+              font-size: 24px;
+              top: 60px; }
+              .bannerbox .banner .lunbo li:nth-child(1) .iphonebox .col.s1 {
+                width: 8.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(1) .iphonebox .col.s2 {
+                width: 16.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(1) .iphonebox .col.s3 {
+                width: 25%; }
+              .bannerbox .banner .lunbo li:nth-child(1) .iphonebox .col.s4 {
+                width: 33.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(1) .iphonebox .col.s5 {
+                width: 41.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(1) .iphonebox .col.s6 {
+                width: 50%; }
+              .bannerbox .banner .lunbo li:nth-child(1) .iphonebox .col.s7 {
+                width: 58.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(1) .iphonebox .col.s8 {
+                width: 66.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(1) .iphonebox .col.s9 {
+                width: 75%; }
+              .bannerbox .banner .lunbo li:nth-child(1) .iphonebox .col.s10 {
+                width: 83.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(1) .iphonebox .col.s11 {
+                width: 91.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(1) .iphonebox .col.s12 {
+                width: 100%; } }
+          .bannerbox .banner .lunbo li:nth-child(1) .iphonebox p {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 100px;
+            width: 205px;
+            height: 40px;
+            background: url("../img/iphone_6s_medium.png") no-repeat; }
+            @media screen and (max-width: 736px) {
+              .bannerbox .banner .lunbo li:nth-child(1) .iphonebox p {
+                width: 166px;
+                height: 31px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background: url("../img/iphone_6s_small.png") no-repeat;
+                width: 166px;
+                height: 31px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background: url("../img/iphone_6s_small.png") no-repeat;
+                width: 166px;
+                height: 31px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background: url("../img/iphone_6s_small.png") no-repeat;
+                width: 166px;
+                height: 31px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background: url("../img/iphone_6s_small.png") no-repeat;
+                width: 166px;
+                height: 31px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background: url("../img/iphone_6s_small.png") no-repeat;
+                width: 166px;
+                height: 31px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background: url("../img/iphone_6s_small.png") no-repeat;
+                width: 166px;
+                height: 31px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background: url("../img/iphone_6s_small.png") no-repeat;
+                width: 166px;
+                height: 31px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background: url("../img/iphone_6s_small.png") no-repeat;
+                width: 166px;
+                height: 31px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background: url("../img/iphone_6s_small.png") no-repeat;
+                width: 166px;
+                height: 31px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background: url("../img/iphone_6s_small.png") no-repeat;
+                width: 166px;
+                height: 31px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background: url("../img/iphone_6s_small.png") no-repeat;
+                width: 166px;
+                height: 31px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background: url("../img/iphone_6s_small.png") no-repeat; }
+                .bannerbox .banner .lunbo li:nth-child(1) .iphonebox p .col.s1 {
+                  width: 8.33333%; }
+                .bannerbox .banner .lunbo li:nth-child(1) .iphonebox p .col.s2 {
+                  width: 16.66667%; }
+                .bannerbox .banner .lunbo li:nth-child(1) .iphonebox p .col.s3 {
+                  width: 25%; }
+                .bannerbox .banner .lunbo li:nth-child(1) .iphonebox p .col.s4 {
+                  width: 33.33333%; }
+                .bannerbox .banner .lunbo li:nth-child(1) .iphonebox p .col.s5 {
+                  width: 41.66667%; }
+                .bannerbox .banner .lunbo li:nth-child(1) .iphonebox p .col.s6 {
+                  width: 50%; }
+                .bannerbox .banner .lunbo li:nth-child(1) .iphonebox p .col.s7 {
+                  width: 58.33333%; }
+                .bannerbox .banner .lunbo li:nth-child(1) .iphonebox p .col.s8 {
+                  width: 66.66667%; }
+                .bannerbox .banner .lunbo li:nth-child(1) .iphonebox p .col.s9 {
+                  width: 75%; }
+                .bannerbox .banner .lunbo li:nth-child(1) .iphonebox p .col.s10 {
+                  width: 83.33333%; }
+                .bannerbox .banner .lunbo li:nth-child(1) .iphonebox p .col.s11 {
+                  width: 91.66667%; }
+                .bannerbox .banner .lunbo li:nth-child(1) .iphonebox p .col.s12 {
+                  width: 100%; } }
+          .bannerbox .banner .lunbo li:nth-child(1) .iphonebox span {
+            line-height: 380px; }
+            @media screen and (max-width: 736px) {
+              .bannerbox .banner .lunbo li:nth-child(1) .iphonebox span {
+                display: block;
+                width: 280px;
+                height: 100px;
+                line-height: 30px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 140px;
+                display: block;
+                width: 280px;
+                height: 100px;
+                line-height: 30px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 140px;
+                display: block;
+                width: 280px;
+                height: 100px;
+                line-height: 30px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 140px;
+                display: block;
+                width: 280px;
+                height: 100px;
+                line-height: 30px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 140px;
+                display: block;
+                width: 280px;
+                height: 100px;
+                line-height: 30px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 140px;
+                display: block;
+                width: 280px;
+                height: 100px;
+                line-height: 30px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 140px;
+                display: block;
+                width: 280px;
+                height: 100px;
+                line-height: 30px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 140px;
+                display: block;
+                width: 280px;
+                height: 100px;
+                line-height: 30px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 140px;
+                display: block;
+                width: 280px;
+                height: 100px;
+                line-height: 30px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 140px;
+                display: block;
+                width: 280px;
+                height: 100px;
+                line-height: 30px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 140px;
+                display: block;
+                width: 280px;
+                height: 100px;
+                line-height: 30px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 140px;
+                display: block;
+                width: 280px;
+                height: 100px;
+                line-height: 30px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 140px; }
+                .bannerbox .banner .lunbo li:nth-child(1) .iphonebox span .col.s1 {
+                  width: 8.33333%; }
+                .bannerbox .banner .lunbo li:nth-child(1) .iphonebox span .col.s2 {
+                  width: 16.66667%; }
+                .bannerbox .banner .lunbo li:nth-child(1) .iphonebox span .col.s3 {
+                  width: 25%; }
+                .bannerbox .banner .lunbo li:nth-child(1) .iphonebox span .col.s4 {
+                  width: 33.33333%; }
+                .bannerbox .banner .lunbo li:nth-child(1) .iphonebox span .col.s5 {
+                  width: 41.66667%; }
+                .bannerbox .banner .lunbo li:nth-child(1) .iphonebox span .col.s6 {
+                  width: 50%; }
+                .bannerbox .banner .lunbo li:nth-child(1) .iphonebox span .col.s7 {
+                  width: 58.33333%; }
+                .bannerbox .banner .lunbo li:nth-child(1) .iphonebox span .col.s8 {
+                  width: 66.66667%; }
+                .bannerbox .banner .lunbo li:nth-child(1) .iphonebox span .col.s9 {
+                  width: 75%; }
+                .bannerbox .banner .lunbo li:nth-child(1) .iphonebox span .col.s10 {
+                  width: 83.33333%; }
+                .bannerbox .banner .lunbo li:nth-child(1) .iphonebox span .col.s11 {
+                  width: 91.66667%; }
+                .bannerbox .banner .lunbo li:nth-child(1) .iphonebox span .col.s12 {
+                  width: 100%; } }
+      .bannerbox .banner .lunbo li:nth-child(2) a {
+        background: url("../img/ipad_pro_family_medium.jpg") no-repeat 50% 350%; }
+        @media screen and (max-width: 736px) {
+          .bannerbox .banner .lunbo li:nth-child(2) a {
+            background: url("../img/ipad_pro_family_small.jpg") no-repeat 50% 100%;
+            background: url("../img/ipad_pro_family_small.jpg") no-repeat 50% 100%;
+            background: url("../img/ipad_pro_family_small.jpg") no-repeat 50% 100%;
+            background: url("../img/ipad_pro_family_small.jpg") no-repeat 50% 100%;
+            background: url("../img/ipad_pro_family_small.jpg") no-repeat 50% 100%;
+            background: url("../img/ipad_pro_family_small.jpg") no-repeat 50% 100%;
+            background: url("../img/ipad_pro_family_small.jpg") no-repeat 50% 100%;
+            background: url("../img/ipad_pro_family_small.jpg") no-repeat 50% 100%;
+            background: url("../img/ipad_pro_family_small.jpg") no-repeat 50% 100%;
+            background: url("../img/ipad_pro_family_small.jpg") no-repeat 50% 100%;
+            background: url("../img/ipad_pro_family_small.jpg") no-repeat 50% 100%;
+            background: url("../img/ipad_pro_family_small.jpg") no-repeat 50% 100%; }
+            .bannerbox .banner .lunbo li:nth-child(2) a .col.s1 {
+              width: 8.33333%; }
+            .bannerbox .banner .lunbo li:nth-child(2) a .col.s2 {
+              width: 16.66667%; }
+            .bannerbox .banner .lunbo li:nth-child(2) a .col.s3 {
+              width: 25%; }
+            .bannerbox .banner .lunbo li:nth-child(2) a .col.s4 {
+              width: 33.33333%; }
+            .bannerbox .banner .lunbo li:nth-child(2) a .col.s5 {
+              width: 41.66667%; }
+            .bannerbox .banner .lunbo li:nth-child(2) a .col.s6 {
+              width: 50%; }
+            .bannerbox .banner .lunbo li:nth-child(2) a .col.s7 {
+              width: 58.33333%; }
+            .bannerbox .banner .lunbo li:nth-child(2) a .col.s8 {
+              width: 66.66667%; }
+            .bannerbox .banner .lunbo li:nth-child(2) a .col.s9 {
+              width: 75%; }
+            .bannerbox .banner .lunbo li:nth-child(2) a .col.s10 {
+              width: 83.33333%; }
+            .bannerbox .banner .lunbo li:nth-child(2) a .col.s11 {
+              width: 91.66667%; }
+            .bannerbox .banner .lunbo li:nth-child(2) a .col.s12 {
+              width: 100%; } }
+      .bannerbox .banner .lunbo li:nth-child(2) .ipadbox {
+        width: 100%;
+        height: 260px;
+        text-align: center;
+        font-family: zitixi;
+        font-size: 30px; }
+        @media screen and (max-width: 736px) {
+          .bannerbox .banner .lunbo li:nth-child(2) .ipadbox {
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px; }
+            .bannerbox .banner .lunbo li:nth-child(2) .ipadbox .col.s1 {
+              width: 8.33333%; }
+            .bannerbox .banner .lunbo li:nth-child(2) .ipadbox .col.s2 {
+              width: 16.66667%; }
+            .bannerbox .banner .lunbo li:nth-child(2) .ipadbox .col.s3 {
+              width: 25%; }
+            .bannerbox .banner .lunbo li:nth-child(2) .ipadbox .col.s4 {
+              width: 33.33333%; }
+            .bannerbox .banner .lunbo li:nth-child(2) .ipadbox .col.s5 {
+              width: 41.66667%; }
+            .bannerbox .banner .lunbo li:nth-child(2) .ipadbox .col.s6 {
+              width: 50%; }
+            .bannerbox .banner .lunbo li:nth-child(2) .ipadbox .col.s7 {
+              width: 58.33333%; }
+            .bannerbox .banner .lunbo li:nth-child(2) .ipadbox .col.s8 {
+              width: 66.66667%; }
+            .bannerbox .banner .lunbo li:nth-child(2) .ipadbox .col.s9 {
+              width: 75%; }
+            .bannerbox .banner .lunbo li:nth-child(2) .ipadbox .col.s10 {
+              width: 83.33333%; }
+            .bannerbox .banner .lunbo li:nth-child(2) .ipadbox .col.s11 {
+              width: 91.66667%; }
+            .bannerbox .banner .lunbo li:nth-child(2) .ipadbox .col.s12 {
+              width: 100%; } }
+        .bannerbox .banner .lunbo li:nth-child(2) .ipadbox p {
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto;
+          top: 100px;
+          width: 205px;
+          height: 40px;
+          font-size: 36px;
+          color: #333;
+          font-family: zitizhengc; }
+          @media screen and (max-width: 736px) {
+            .bannerbox .banner .lunbo li:nth-child(2) .ipadbox p {
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto; }
+              .bannerbox .banner .lunbo li:nth-child(2) .ipadbox p .col.s1 {
+                width: 8.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(2) .ipadbox p .col.s2 {
+                width: 16.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(2) .ipadbox p .col.s3 {
+                width: 25%; }
+              .bannerbox .banner .lunbo li:nth-child(2) .ipadbox p .col.s4 {
+                width: 33.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(2) .ipadbox p .col.s5 {
+                width: 41.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(2) .ipadbox p .col.s6 {
+                width: 50%; }
+              .bannerbox .banner .lunbo li:nth-child(2) .ipadbox p .col.s7 {
+                width: 58.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(2) .ipadbox p .col.s8 {
+                width: 66.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(2) .ipadbox p .col.s9 {
+                width: 75%; }
+              .bannerbox .banner .lunbo li:nth-child(2) .ipadbox p .col.s10 {
+                width: 83.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(2) .ipadbox p .col.s11 {
+                width: 91.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(2) .ipadbox p .col.s12 {
+                width: 100%; } }
+        .bannerbox .banner .lunbo li:nth-child(2) .ipadbox span {
+          line-height: 380px; }
+          @media screen and (max-width: 736px) {
+            .bannerbox .banner .lunbo li:nth-child(2) .ipadbox span {
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px; }
+              .bannerbox .banner .lunbo li:nth-child(2) .ipadbox span .col.s1 {
+                width: 8.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(2) .ipadbox span .col.s2 {
+                width: 16.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(2) .ipadbox span .col.s3 {
+                width: 25%; }
+              .bannerbox .banner .lunbo li:nth-child(2) .ipadbox span .col.s4 {
+                width: 33.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(2) .ipadbox span .col.s5 {
+                width: 41.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(2) .ipadbox span .col.s6 {
+                width: 50%; }
+              .bannerbox .banner .lunbo li:nth-child(2) .ipadbox span .col.s7 {
+                width: 58.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(2) .ipadbox span .col.s8 {
+                width: 66.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(2) .ipadbox span .col.s9 {
+                width: 75%; }
+              .bannerbox .banner .lunbo li:nth-child(2) .ipadbox span .col.s10 {
+                width: 83.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(2) .ipadbox span .col.s11 {
+                width: 91.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(2) .ipadbox span .col.s12 {
+                width: 100%; } }
+      .bannerbox .banner .lunbo li:nth-child(3) a {
+        background: url("../img/apple_watch_trio_medium.jpg") no-repeat 50% 80%; }
+        @media screen and (max-width: 736px) {
+          .bannerbox .banner .lunbo li:nth-child(3) a {
+            background: url("../img/apple_watch_trio_small.jpg") no-repeat 50% 80%;
+            background: url("../img/apple_watch_trio_small.jpg") no-repeat 50% 80%;
+            background: url("../img/apple_watch_trio_small.jpg") no-repeat 50% 80%;
+            background: url("../img/apple_watch_trio_small.jpg") no-repeat 50% 80%;
+            background: url("../img/apple_watch_trio_small.jpg") no-repeat 50% 80%;
+            background: url("../img/apple_watch_trio_small.jpg") no-repeat 50% 80%;
+            background: url("../img/apple_watch_trio_small.jpg") no-repeat 50% 80%;
+            background: url("../img/apple_watch_trio_small.jpg") no-repeat 50% 80%;
+            background: url("../img/apple_watch_trio_small.jpg") no-repeat 50% 80%;
+            background: url("../img/apple_watch_trio_small.jpg") no-repeat 50% 80%;
+            background: url("../img/apple_watch_trio_small.jpg") no-repeat 50% 80%;
+            background: url("../img/apple_watch_trio_small.jpg") no-repeat 50% 80%; }
+            .bannerbox .banner .lunbo li:nth-child(3) a .col.s1 {
+              width: 8.33333%; }
+            .bannerbox .banner .lunbo li:nth-child(3) a .col.s2 {
+              width: 16.66667%; }
+            .bannerbox .banner .lunbo li:nth-child(3) a .col.s3 {
+              width: 25%; }
+            .bannerbox .banner .lunbo li:nth-child(3) a .col.s4 {
+              width: 33.33333%; }
+            .bannerbox .banner .lunbo li:nth-child(3) a .col.s5 {
+              width: 41.66667%; }
+            .bannerbox .banner .lunbo li:nth-child(3) a .col.s6 {
+              width: 50%; }
+            .bannerbox .banner .lunbo li:nth-child(3) a .col.s7 {
+              width: 58.33333%; }
+            .bannerbox .banner .lunbo li:nth-child(3) a .col.s8 {
+              width: 66.66667%; }
+            .bannerbox .banner .lunbo li:nth-child(3) a .col.s9 {
+              width: 75%; }
+            .bannerbox .banner .lunbo li:nth-child(3) a .col.s10 {
+              width: 83.33333%; }
+            .bannerbox .banner .lunbo li:nth-child(3) a .col.s11 {
+              width: 91.66667%; }
+            .bannerbox .banner .lunbo li:nth-child(3) a .col.s12 {
+              width: 100%; } }
+      .bannerbox .banner .lunbo li:nth-child(3) .watchbox {
+        width: 100%;
+        height: 260px;
+        text-align: center;
+        font-family: zitixi;
+        font-size: 30px; }
+        @media screen and (max-width: 736px) {
+          .bannerbox .banner .lunbo li:nth-child(3) .watchbox {
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px; }
+            .bannerbox .banner .lunbo li:nth-child(3) .watchbox .col.s1 {
+              width: 8.33333%; }
+            .bannerbox .banner .lunbo li:nth-child(3) .watchbox .col.s2 {
+              width: 16.66667%; }
+            .bannerbox .banner .lunbo li:nth-child(3) .watchbox .col.s3 {
+              width: 25%; }
+            .bannerbox .banner .lunbo li:nth-child(3) .watchbox .col.s4 {
+              width: 33.33333%; }
+            .bannerbox .banner .lunbo li:nth-child(3) .watchbox .col.s5 {
+              width: 41.66667%; }
+            .bannerbox .banner .lunbo li:nth-child(3) .watchbox .col.s6 {
+              width: 50%; }
+            .bannerbox .banner .lunbo li:nth-child(3) .watchbox .col.s7 {
+              width: 58.33333%; }
+            .bannerbox .banner .lunbo li:nth-child(3) .watchbox .col.s8 {
+              width: 66.66667%; }
+            .bannerbox .banner .lunbo li:nth-child(3) .watchbox .col.s9 {
+              width: 75%; }
+            .bannerbox .banner .lunbo li:nth-child(3) .watchbox .col.s10 {
+              width: 83.33333%; }
+            .bannerbox .banner .lunbo li:nth-child(3) .watchbox .col.s11 {
+              width: 91.66667%; }
+            .bannerbox .banner .lunbo li:nth-child(3) .watchbox .col.s12 {
+              width: 100%; } }
+        .bannerbox .banner .lunbo li:nth-child(3) .watchbox p {
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto;
+          top: 100px;
+          width: 205px;
+          height: 40px;
+          background: url("../img/apple_watch_medium.png") no-repeat; }
+          @media screen and (max-width: 736px) {
+            .bannerbox .banner .lunbo li:nth-child(3) .watchbox p {
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              background: url("../img/apple_watch_small.png") no-repeat;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              background: url("../img/apple_watch_small.png") no-repeat;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              background: url("../img/apple_watch_small.png") no-repeat;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              background: url("../img/apple_watch_small.png") no-repeat;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              background: url("../img/apple_watch_small.png") no-repeat;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              background: url("../img/apple_watch_small.png") no-repeat;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              background: url("../img/apple_watch_small.png") no-repeat;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              background: url("../img/apple_watch_small.png") no-repeat;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              background: url("../img/apple_watch_small.png") no-repeat;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              background: url("../img/apple_watch_small.png") no-repeat;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              background: url("../img/apple_watch_small.png") no-repeat;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              background: url("../img/apple_watch_small.png") no-repeat; }
+              .bannerbox .banner .lunbo li:nth-child(3) .watchbox p .col.s1 {
+                width: 8.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(3) .watchbox p .col.s2 {
+                width: 16.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(3) .watchbox p .col.s3 {
+                width: 25%; }
+              .bannerbox .banner .lunbo li:nth-child(3) .watchbox p .col.s4 {
+                width: 33.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(3) .watchbox p .col.s5 {
+                width: 41.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(3) .watchbox p .col.s6 {
+                width: 50%; }
+              .bannerbox .banner .lunbo li:nth-child(3) .watchbox p .col.s7 {
+                width: 58.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(3) .watchbox p .col.s8 {
+                width: 66.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(3) .watchbox p .col.s9 {
+                width: 75%; }
+              .bannerbox .banner .lunbo li:nth-child(3) .watchbox p .col.s10 {
+                width: 83.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(3) .watchbox p .col.s11 {
+                width: 91.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(3) .watchbox p .col.s12 {
+                width: 100%; } }
+        .bannerbox .banner .lunbo li:nth-child(3) .watchbox span {
+          line-height: 380px; }
+          @media screen and (max-width: 736px) {
+            .bannerbox .banner .lunbo li:nth-child(3) .watchbox span {
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px; }
+              .bannerbox .banner .lunbo li:nth-child(3) .watchbox span .col.s1 {
+                width: 8.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(3) .watchbox span .col.s2 {
+                width: 16.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(3) .watchbox span .col.s3 {
+                width: 25%; }
+              .bannerbox .banner .lunbo li:nth-child(3) .watchbox span .col.s4 {
+                width: 33.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(3) .watchbox span .col.s5 {
+                width: 41.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(3) .watchbox span .col.s6 {
+                width: 50%; }
+              .bannerbox .banner .lunbo li:nth-child(3) .watchbox span .col.s7 {
+                width: 58.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(3) .watchbox span .col.s8 {
+                width: 66.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(3) .watchbox span .col.s9 {
+                width: 75%; }
+              .bannerbox .banner .lunbo li:nth-child(3) .watchbox span .col.s10 {
+                width: 83.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(3) .watchbox span .col.s11 {
+                width: 91.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(3) .watchbox span .col.s12 {
+                width: 100%; } }
+      .bannerbox .banner .lunbo li:nth-child(4) a {
+        background: url("../img/macbook_medium.png") no-repeat 50% 80%; }
+        @media screen and (max-width: 736px) {
+          .bannerbox .banner .lunbo li:nth-child(4) a {
+            background: url("../img/macbook_small.png") no-repeat 50% 80%;
+            background: url("../img/macbook_small.png") no-repeat 50% 80%;
+            background: url("../img/macbook_small.png") no-repeat 50% 80%;
+            background: url("../img/macbook_small.png") no-repeat 50% 80%;
+            background: url("../img/macbook_small.png") no-repeat 50% 80%;
+            background: url("../img/macbook_small.png") no-repeat 50% 80%;
+            background: url("../img/macbook_small.png") no-repeat 50% 80%;
+            background: url("../img/macbook_small.png") no-repeat 50% 80%;
+            background: url("../img/macbook_small.png") no-repeat 50% 80%;
+            background: url("../img/macbook_small.png") no-repeat 50% 80%;
+            background: url("../img/macbook_small.png") no-repeat 50% 80%;
+            background: url("../img/macbook_small.png") no-repeat 50% 80%; }
+            .bannerbox .banner .lunbo li:nth-child(4) a .col.s1 {
+              width: 8.33333%; }
+            .bannerbox .banner .lunbo li:nth-child(4) a .col.s2 {
+              width: 16.66667%; }
+            .bannerbox .banner .lunbo li:nth-child(4) a .col.s3 {
+              width: 25%; }
+            .bannerbox .banner .lunbo li:nth-child(4) a .col.s4 {
+              width: 33.33333%; }
+            .bannerbox .banner .lunbo li:nth-child(4) a .col.s5 {
+              width: 41.66667%; }
+            .bannerbox .banner .lunbo li:nth-child(4) a .col.s6 {
+              width: 50%; }
+            .bannerbox .banner .lunbo li:nth-child(4) a .col.s7 {
+              width: 58.33333%; }
+            .bannerbox .banner .lunbo li:nth-child(4) a .col.s8 {
+              width: 66.66667%; }
+            .bannerbox .banner .lunbo li:nth-child(4) a .col.s9 {
+              width: 75%; }
+            .bannerbox .banner .lunbo li:nth-child(4) a .col.s10 {
+              width: 83.33333%; }
+            .bannerbox .banner .lunbo li:nth-child(4) a .col.s11 {
+              width: 91.66667%; }
+            .bannerbox .banner .lunbo li:nth-child(4) a .col.s12 {
+              width: 100%; } }
+      .bannerbox .banner .lunbo li:nth-child(4) .macbox {
+        width: 100%;
+        height: 260px;
+        text-align: center;
+        font-family: zitixi;
+        font-size: 30px; }
+        @media screen and (max-width: 736px) {
+          .bannerbox .banner .lunbo li:nth-child(4) .macbox {
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px;
+            height: 320px;
+            font-size: 24px;
+            top: 60px; }
+            .bannerbox .banner .lunbo li:nth-child(4) .macbox .col.s1 {
+              width: 8.33333%; }
+            .bannerbox .banner .lunbo li:nth-child(4) .macbox .col.s2 {
+              width: 16.66667%; }
+            .bannerbox .banner .lunbo li:nth-child(4) .macbox .col.s3 {
+              width: 25%; }
+            .bannerbox .banner .lunbo li:nth-child(4) .macbox .col.s4 {
+              width: 33.33333%; }
+            .bannerbox .banner .lunbo li:nth-child(4) .macbox .col.s5 {
+              width: 41.66667%; }
+            .bannerbox .banner .lunbo li:nth-child(4) .macbox .col.s6 {
+              width: 50%; }
+            .bannerbox .banner .lunbo li:nth-child(4) .macbox .col.s7 {
+              width: 58.33333%; }
+            .bannerbox .banner .lunbo li:nth-child(4) .macbox .col.s8 {
+              width: 66.66667%; }
+            .bannerbox .banner .lunbo li:nth-child(4) .macbox .col.s9 {
+              width: 75%; }
+            .bannerbox .banner .lunbo li:nth-child(4) .macbox .col.s10 {
+              width: 83.33333%; }
+            .bannerbox .banner .lunbo li:nth-child(4) .macbox .col.s11 {
+              width: 91.66667%; }
+            .bannerbox .banner .lunbo li:nth-child(4) .macbox .col.s12 {
+              width: 100%; } }
+        .bannerbox .banner .lunbo li:nth-child(4) .macbox p {
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto;
+          top: 100px;
+          width: 205px;
+          height: 40px;
+          font-size: 36px;
+          color: #333;
+          font-family: zitizhengc; }
+          @media screen and (max-width: 736px) {
+            .bannerbox .banner .lunbo li:nth-child(4) .macbox p {
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 166px;
+              height: 31px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto; }
+              .bannerbox .banner .lunbo li:nth-child(4) .macbox p .col.s1 {
+                width: 8.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(4) .macbox p .col.s2 {
+                width: 16.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(4) .macbox p .col.s3 {
+                width: 25%; }
+              .bannerbox .banner .lunbo li:nth-child(4) .macbox p .col.s4 {
+                width: 33.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(4) .macbox p .col.s5 {
+                width: 41.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(4) .macbox p .col.s6 {
+                width: 50%; }
+              .bannerbox .banner .lunbo li:nth-child(4) .macbox p .col.s7 {
+                width: 58.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(4) .macbox p .col.s8 {
+                width: 66.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(4) .macbox p .col.s9 {
+                width: 75%; }
+              .bannerbox .banner .lunbo li:nth-child(4) .macbox p .col.s10 {
+                width: 83.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(4) .macbox p .col.s11 {
+                width: 91.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(4) .macbox p .col.s12 {
+                width: 100%; } }
+        .bannerbox .banner .lunbo li:nth-child(4) .macbox span {
+          line-height: 380px; }
+          @media screen and (max-width: 736px) {
+            .bannerbox .banner .lunbo li:nth-child(4) .macbox span {
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px;
+              display: block;
+              width: 280px;
+              height: 100px;
+              line-height: 30px;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 140px; }
+              .bannerbox .banner .lunbo li:nth-child(4) .macbox span .col.s1 {
+                width: 8.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(4) .macbox span .col.s2 {
+                width: 16.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(4) .macbox span .col.s3 {
+                width: 25%; }
+              .bannerbox .banner .lunbo li:nth-child(4) .macbox span .col.s4 {
+                width: 33.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(4) .macbox span .col.s5 {
+                width: 41.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(4) .macbox span .col.s6 {
+                width: 50%; }
+              .bannerbox .banner .lunbo li:nth-child(4) .macbox span .col.s7 {
+                width: 58.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(4) .macbox span .col.s8 {
+                width: 66.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(4) .macbox span .col.s9 {
+                width: 75%; }
+              .bannerbox .banner .lunbo li:nth-child(4) .macbox span .col.s10 {
+                width: 83.33333%; }
+              .bannerbox .banner .lunbo li:nth-child(4) .macbox span .col.s11 {
+                width: 91.66667%; }
+              .bannerbox .banner .lunbo li:nth-child(4) .macbox span .col.s12 {
+                width: 100%; } }
+      .bannerbox .banner .lunbo::after {
+        content: "";
+        clear: both; }
+    .bannerbox .banner .point {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 7px;
+      width: 114px;
+      height: 8px; }
+      .bannerbox .banner .point li {
+        width: 8px;
+        height: 8px;
+        background: #999999;
+        float: left;
+        margin: 0 10px;
+        border-radius: 50%; }
+      .bannerbox .banner .point li.p-yangshi {
+        border: 1px solid #187DCE;
+        transform: translateY(-1px);
+        background: #fff; }
+
+.sikuaibox {
+  width: 100%;
+  height: auto; }
+  .sikuaibox .sikuai {
+    width: 100%;
+    height: 200px; }
+    @media screen and (max-width: 1068px) {
+      .sikuaibox .sikuai {
+        height: 400px;
+        height: 400px;
+        height: 400px;
+        height: 400px;
+        height: 400px;
+        height: 400px;
+        height: 400px;
+        height: 400px;
+        height: 400px;
+        height: 400px;
+        height: 400px;
+        height: 400px; }
+        .sikuaibox .sikuai .col.m1 {
+          width: 8.33333%; }
+        .sikuaibox .sikuai .col.m2 {
+          width: 16.66667%; }
+        .sikuaibox .sikuai .col.m3 {
+          width: 25%; }
+        .sikuaibox .sikuai .col.m4 {
+          width: 33.33333%; }
+        .sikuaibox .sikuai .col.m5 {
+          width: 41.66667%; }
+        .sikuaibox .sikuai .col.m6 {
+          width: 50%; }
+        .sikuaibox .sikuai .col.m7 {
+          width: 58.33333%; }
+        .sikuaibox .sikuai .col.m8 {
+          width: 66.66667%; }
+        .sikuaibox .sikuai .col.m9 {
+          width: 75%; }
+        .sikuaibox .sikuai .col.m10 {
+          width: 83.33333%; }
+        .sikuaibox .sikuai .col.m11 {
+          width: 91.66667%; }
+        .sikuaibox .sikuai .col.m12 {
+          width: 100%; } }
+    @media screen and (max-width: 736px) {
+      .sikuaibox .sikuai {
+        height: 800px;
+        height: 800px;
+        height: 800px;
+        height: 800px;
+        height: 800px;
+        height: 800px;
+        height: 800px;
+        height: 800px;
+        height: 800px;
+        height: 800px;
+        height: 800px;
+        height: 800px; }
+        .sikuaibox .sikuai .col.s1 {
+          width: 8.33333%; }
+        .sikuaibox .sikuai .col.s2 {
+          width: 16.66667%; }
+        .sikuaibox .sikuai .col.s3 {
+          width: 25%; }
+        .sikuaibox .sikuai .col.s4 {
+          width: 33.33333%; }
+        .sikuaibox .sikuai .col.s5 {
+          width: 41.66667%; }
+        .sikuaibox .sikuai .col.s6 {
+          width: 50%; }
+        .sikuaibox .sikuai .col.s7 {
+          width: 58.33333%; }
+        .sikuaibox .sikuai .col.s8 {
+          width: 66.66667%; }
+        .sikuaibox .sikuai .col.s9 {
+          width: 75%; }
+        .sikuaibox .sikuai .col.s10 {
+          width: 83.33333%; }
+        .sikuaibox .sikuai .col.s11 {
+          width: 91.66667%; }
+        .sikuaibox .sikuai .col.s12 {
+          width: 100%; } }
+    .sikuaibox .sikuai .col {
+      height: 200px;
+      border: 1px solid #fff;
+      box-sizing: border-box; }
+    .sikuaibox .sikuai .col.sk1 {
+      height: 200px;
+      background: url("../img/apple_tv_medium.jpg") no-repeat center center; }
+      @media screen and (max-width: 736px) {
+        .sikuaibox .sikuai .col.sk1 {
+          background: url("../img/apple_tv_small.jpg") no-repeat center center;
+          background: url("../img/apple_tv_small.jpg") no-repeat center center;
+          background: url("../img/apple_tv_small.jpg") no-repeat center center;
+          background: url("../img/apple_tv_small.jpg") no-repeat center center;
+          background: url("../img/apple_tv_small.jpg") no-repeat center center;
+          background: url("../img/apple_tv_small.jpg") no-repeat center center;
+          background: url("../img/apple_tv_small.jpg") no-repeat center center;
+          background: url("../img/apple_tv_small.jpg") no-repeat center center;
+          background: url("../img/apple_tv_small.jpg") no-repeat center center;
+          background: url("../img/apple_tv_small.jpg") no-repeat center center;
+          background: url("../img/apple_tv_small.jpg") no-repeat center center;
+          background: url("../img/apple_tv_small.jpg") no-repeat center center; }
+          .sikuaibox .sikuai .col.sk1 .col.s1 {
+            width: 8.33333%; }
+          .sikuaibox .sikuai .col.sk1 .col.s2 {
+            width: 16.66667%; }
+          .sikuaibox .sikuai .col.sk1 .col.s3 {
+            width: 25%; }
+          .sikuaibox .sikuai .col.sk1 .col.s4 {
+            width: 33.33333%; }
+          .sikuaibox .sikuai .col.sk1 .col.s5 {
+            width: 41.66667%; }
+          .sikuaibox .sikuai .col.sk1 .col.s6 {
+            width: 50%; }
+          .sikuaibox .sikuai .col.sk1 .col.s7 {
+            width: 58.33333%; }
+          .sikuaibox .sikuai .col.sk1 .col.s8 {
+            width: 66.66667%; }
+          .sikuaibox .sikuai .col.sk1 .col.s9 {
+            width: 75%; }
+          .sikuaibox .sikuai .col.sk1 .col.s10 {
+            width: 83.33333%; }
+          .sikuaibox .sikuai .col.sk1 .col.s11 {
+            width: 91.66667%; }
+          .sikuaibox .sikuai .col.sk1 .col.s12 {
+            width: 100%; } }
+    .sikuaibox .sikuai .col.sk2 {
+      height: 200px;
+      background: url("../img/public_betas_medium.jpg") no-repeat center center; }
+      @media screen and (max-width: 736px) {
+        .sikuaibox .sikuai .col.sk2 {
+          background: url("../img/public_betas_small.jpg") no-repeat center center;
+          background: url("../img/public_betas_small.jpg") no-repeat center center;
+          background: url("../img/public_betas_small.jpg") no-repeat center center;
+          background: url("../img/public_betas_small.jpg") no-repeat center center;
+          background: url("../img/public_betas_small.jpg") no-repeat center center;
+          background: url("../img/public_betas_small.jpg") no-repeat center center;
+          background: url("../img/public_betas_small.jpg") no-repeat center center;
+          background: url("../img/public_betas_small.jpg") no-repeat center center;
+          background: url("../img/public_betas_small.jpg") no-repeat center center;
+          background: url("../img/public_betas_small.jpg") no-repeat center center;
+          background: url("../img/public_betas_small.jpg") no-repeat center center;
+          background: url("../img/public_betas_small.jpg") no-repeat center center; }
+          .sikuaibox .sikuai .col.sk2 .col.s1 {
+            width: 8.33333%; }
+          .sikuaibox .sikuai .col.sk2 .col.s2 {
+            width: 16.66667%; }
+          .sikuaibox .sikuai .col.sk2 .col.s3 {
+            width: 25%; }
+          .sikuaibox .sikuai .col.sk2 .col.s4 {
+            width: 33.33333%; }
+          .sikuaibox .sikuai .col.sk2 .col.s5 {
+            width: 41.66667%; }
+          .sikuaibox .sikuai .col.sk2 .col.s6 {
+            width: 50%; }
+          .sikuaibox .sikuai .col.sk2 .col.s7 {
+            width: 58.33333%; }
+          .sikuaibox .sikuai .col.sk2 .col.s8 {
+            width: 66.66667%; }
+          .sikuaibox .sikuai .col.sk2 .col.s9 {
+            width: 75%; }
+          .sikuaibox .sikuai .col.sk2 .col.s10 {
+            width: 83.33333%; }
+          .sikuaibox .sikuai .col.sk2 .col.s11 {
+            width: 91.66667%; }
+          .sikuaibox .sikuai .col.sk2 .col.s12 {
+            width: 100%; } }
+    .sikuaibox .sikuai .col.sk3 {
+      height: 200px;
+      background: url("../img/swift_playground_medium.jpg") no-repeat center center; }
+      @media screen and (max-width: 736px) {
+        .sikuaibox .sikuai .col.sk3 {
+          background: url("../img/swift_playground_small.jpg") no-repeat center center;
+          background: url("../img/swift_playground_small.jpg") no-repeat center center;
+          background: url("../img/swift_playground_small.jpg") no-repeat center center;
+          background: url("../img/swift_playground_small.jpg") no-repeat center center;
+          background: url("../img/swift_playground_small.jpg") no-repeat center center;
+          background: url("../img/swift_playground_small.jpg") no-repeat center center;
+          background: url("../img/swift_playground_small.jpg") no-repeat center center;
+          background: url("../img/swift_playground_small.jpg") no-repeat center center;
+          background: url("../img/swift_playground_small.jpg") no-repeat center center;
+          background: url("../img/swift_playground_small.jpg") no-repeat center center;
+          background: url("../img/swift_playground_small.jpg") no-repeat center center;
+          background: url("../img/swift_playground_small.jpg") no-repeat center center; }
+          .sikuaibox .sikuai .col.sk3 .col.s1 {
+            width: 8.33333%; }
+          .sikuaibox .sikuai .col.sk3 .col.s2 {
+            width: 16.66667%; }
+          .sikuaibox .sikuai .col.sk3 .col.s3 {
+            width: 25%; }
+          .sikuaibox .sikuai .col.sk3 .col.s4 {
+            width: 33.33333%; }
+          .sikuaibox .sikuai .col.sk3 .col.s5 {
+            width: 41.66667%; }
+          .sikuaibox .sikuai .col.sk3 .col.s6 {
+            width: 50%; }
+          .sikuaibox .sikuai .col.sk3 .col.s7 {
+            width: 58.33333%; }
+          .sikuaibox .sikuai .col.sk3 .col.s8 {
+            width: 66.66667%; }
+          .sikuaibox .sikuai .col.sk3 .col.s9 {
+            width: 75%; }
+          .sikuaibox .sikuai .col.sk3 .col.s10 {
+            width: 83.33333%; }
+          .sikuaibox .sikuai .col.sk3 .col.s11 {
+            width: 91.66667%; }
+          .sikuaibox .sikuai .col.sk3 .col.s12 {
+            width: 100%; } }
+    .sikuaibox .sikuai .col.sk4 {
+      height: 200px;
+      background: url("../img/bts_iphone_medium.jpg") no-repeat center center; }
+      @media screen and (max-width: 736px) {
+        .sikuaibox .sikuai .col.sk4 {
+          background: url("../img/bts_iphone_small.jpg") no-repeat center center;
+          background: url("../img/bts_iphone_small.jpg") no-repeat center center;
+          background: url("../img/bts_iphone_small.jpg") no-repeat center center;
+          background: url("../img/bts_iphone_small.jpg") no-repeat center center;
+          background: url("../img/bts_iphone_small.jpg") no-repeat center center;
+          background: url("../img/bts_iphone_small.jpg") no-repeat center center;
+          background: url("../img/bts_iphone_small.jpg") no-repeat center center;
+          background: url("../img/bts_iphone_small.jpg") no-repeat center center;
+          background: url("../img/bts_iphone_small.jpg") no-repeat center center;
+          background: url("../img/bts_iphone_small.jpg") no-repeat center center;
+          background: url("../img/bts_iphone_small.jpg") no-repeat center center;
+          background: url("../img/bts_iphone_small.jpg") no-repeat center center; }
+          .sikuaibox .sikuai .col.sk4 .col.s1 {
+            width: 8.33333%; }
+          .sikuaibox .sikuai .col.sk4 .col.s2 {
+            width: 16.66667%; }
+          .sikuaibox .sikuai .col.sk4 .col.s3 {
+            width: 25%; }
+          .sikuaibox .sikuai .col.sk4 .col.s4 {
+            width: 33.33333%; }
+          .sikuaibox .sikuai .col.sk4 .col.s5 {
+            width: 41.66667%; }
+          .sikuaibox .sikuai .col.sk4 .col.s6 {
+            width: 50%; }
+          .sikuaibox .sikuai .col.sk4 .col.s7 {
+            width: 58.33333%; }
+          .sikuaibox .sikuai .col.sk4 .col.s8 {
+            width: 66.66667%; }
+          .sikuaibox .sikuai .col.sk4 .col.s9 {
+            width: 75%; }
+          .sikuaibox .sikuai .col.sk4 .col.s10 {
+            width: 83.33333%; }
+          .sikuaibox .sikuai .col.sk4 .col.s11 {
+            width: 91.66667%; }
+          .sikuaibox .sikuai .col.sk4 .col.s12 {
+            width: 100%; } }
+
+/*dibu*/
+.dibu {
+  width: 100%;
+  height: 368px;
+  padding: 15px 5%;
+  border-top: 1px solid #fff;
+  box-sizing: border-box; }
+  @media screen and (max-width: 900px) {
+    .dibu {
+      height: 388px; } }
+  .dibu .dibubox {
+    width: 100%;
+    height: 100%;
+    padding: 0 8%;
+    box-sizing: border-box; }
+    .dibu .dibubox .wukuai {
+      width: 100%;
+      height: 82%;
+      padding: 15px 0;
+      box-sizing: border-box; }
+      .dibu .dibubox .wukuai::after {
+        content: "";
+        clear: both; }
+      .dibu .dibubox .wukuai ul {
+        width: 20%;
+        height: 70%;
+        float: left; }
+        .dibu .dibubox .wukuai ul span {
+          font-family: "zitijiacu";
+          font-size: 12px;
+          color: #333; }
+        .dibu .dibubox .wukuai ul li {
+          font-family: "zitizhengc";
+          font-size: 12px;
+          color: #666;
+          padding: 3px 0; }
+    .dibu .dibubox .lianjie {
+      width: 100%;
+      height: 18%; }
+      .dibu .dibubox .lianjie .lianjie1 {
+        width: 100%;
+        height: 50%; }
+        .dibu .dibubox .lianjie .lianjie1 li {
+          border-bottom: 1px solid #E3E3E3;
+          padding: 7px 0;
+          box-sizing: border-box;
+          color: #999;
+          font-size: 12px;
+          font-family: "zitizhengc"; }
+          .dibu .dibubox .lianjie .lianjie1 li a {
+            font-family: "zitizhengc";
+            font-size: 12px;
+            color: #0088CC; }
+            .dibu .dibubox .lianjie .lianjie1 li a:hover {
+              color: #333;
+              text-decoration: underline; }
+      .dibu .dibubox .lianjie .lianjie2 {
+        width: 100%;
+        height: 50%; }
+        @media screen and (max-width: 900px) {
+          .dibu .dibubox .lianjie .lianjie2 {
+            height: 70%; }
+            .dibu .dibubox .lianjie .lianjie2 li:nth-child(2) {
+              clear: both; } }
+        .dibu .dibubox .lianjie .lianjie2 li {
+          color: #999;
+          font-size: 12px;
+          font-family: "zitizhengc";
+          float: left;
+          padding: 7px 0;
+          box-sizing: border-box; }
+          .dibu .dibubox .lianjie .lianjie2 li a {
+            margin: 1%;
+            color: #666;
+            font-size: 12px;
+            font-family: "zitizhengc"; }
+            .dibu .dibubox .lianjie .lianjie2 li a:hover {
+              color: #333;
+              text-decoration: underline; }
+        .dibu .dibubox .lianjie .lianjie2 .guoqi {
+          width: auto;
+          height: auto;
+          padding: 7px 0;
+          box-sizing: border-box;
+          float: right; }
+          .dibu .dibubox .lianjie .lianjie2 .guoqi span a {
+            margin: 2%;
+            color: #666;
+            font-size: 12px;
+            font-family: "zitizhengc"; }
+            .dibu .dibubox .lianjie .lianjie2 .guoqi span a:hover {
+              color: #333;
+              text-decoration: underline; }
+
+.dbxy {
+  width: 100%;
+  height: auto;
+  padding: 5% 5%;
+  box-sizing: border-box;
+  display: none; }
+  .dbxy .lie {
+    border-bottom: 1px solid #e3e3e3;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    transition: all 1s ease; }
+    .dbxy .lie span {
+      display: block;
+      height: 40px;
+      font-family: "zitizhengc";
+      font-size: 14px;
+      color: #333;
+      line-height: 40px; }
+    .dbxy .lie li {
+      height: 30px;
+      line-height: 30px;
+      font-family: "zitixi";
+      font-size: 10px;
+      color: #666; }
+      .dbxy .lie li:hover {
+        text-decoration: underline; }
+    .dbxy .lie::after {
+      content: "";
+      clear: both; }
+    .dbxy .lie .xyclose {
+      display: block;
+      width: 30px;
+      height: 30px;
+      background: url("../img/2016-07-24_193516.jpg") no-repeat center center;
+      float: right;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: all 0.6s ease; }
+    .dbxy .lie .xyclose.chazhuan {
+      transform: rotateZ(45deg); }
+  .dbxy .lie.chuxian {
+    padding-bottom: 40px;
+    transition: all 1s ease; }
+  .dbxy .xylianjie {
+    width: 100%;
+    height: auto; }
+    .dbxy .xylianjie ul {
+      border: none; }
+      .dbxy .xylianjie ul li {
+        height: 50px;
+        line-height: 50px;
+        font-size: 12px;
+        color: #666;
+        font-family: "zitixi"; }
+      .dbxy .xylianjie ul a {
+        font-size: 10px;
+        color: #666;
+        font-family: "zitizhengc"; }
+        .dbxy .xylianjie ul a:hover {
+          text-decoration: underline; }
+    .dbxy .xylianjie .guoqi {
+      width: 100%;
+      height: auto;
+      padding-bottom: 20px; }
+      .dbxy .xylianjie .guoqi span {
+        margin-left: 1%;
+        font-size: 12px;
+        color: #666;
+        font-family: "zitizhengc"; }
+    .dbxy .xylianjie .disp {
+      width: 100%;
+      height: auto; }
+      .dbxy .xylianjie .disp span {
+        color: #999;
+        font-family: "zitizhengc";
+        font-size: 12px; }
+    .dbxy .xylianjie .last {
+      width: 100%;
+      height: auto; }
+      .dbxy .xylianjie .last ul {
+        width: 100%;
+        text-align: justify; }
+      .dbxy .xylianjie .last .zzhh {
+        height: auto;
+        line-height: 20px;
+        font-family: "zitixi";
+        float: left;
+        font-size: 15px; }
+        .dbxy .xylianjie .last .zzhh a {
+          font-size: 10px;
+          color: #666;
+          font-family: "zitizhengc";
+          margin: 0 10px; }
+          .dbxy .xylianjie .last .zzhh a:hover {
+            text-decoration: underline; }
+      .dbxy .xylianjie .last .dagezi {
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        display: none; }
+
+@media screen and (max-width: 736px) {
+  .col.s1 {
+    width: 8.33333%; }
+  .dibu {
+    display: none; }
+  .dbxy {
+    display: block; }
+  .col.s2 {
+    width: 16.66667%; }
+  .dibu {
+    display: none; }
+  .dbxy {
+    display: block; }
+  .col.s3 {
+    width: 25%; }
+  .dibu {
+    display: none; }
+  .dbxy {
+    display: block; }
+  .col.s4 {
+    width: 33.33333%; }
+  .dibu {
+    display: none; }
+  .dbxy {
+    display: block; }
+  .col.s5 {
+    width: 41.66667%; }
+  .dibu {
+    display: none; }
+  .dbxy {
+    display: block; }
+  .col.s6 {
+    width: 50%; }
+  .dibu {
+    display: none; }
+  .dbxy {
+    display: block; }
+  .col.s7 {
+    width: 58.33333%; }
+  .dibu {
+    display: none; }
+  .dbxy {
+    display: block; }
+  .col.s8 {
+    width: 66.66667%; }
+  .dibu {
+    display: none; }
+  .dbxy {
+    display: block; }
+  .col.s9 {
+    width: 75%; }
+  .dibu {
+    display: none; }
+  .dbxy {
+    display: block; }
+  .col.s10 {
+    width: 83.33333%; }
+  .dibu {
+    display: none; }
+  .dbxy {
+    display: block; }
+  .col.s11 {
+    width: 91.66667%; }
+  .dibu {
+    display: none; }
+  .dbxy {
+    display: block; }
+  .col.s12 {
+    width: 100%; }
+  .dibu {
+    display: none; }
+  .dbxy {
+    display: block; } }
