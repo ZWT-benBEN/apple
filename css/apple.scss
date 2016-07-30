@@ -280,10 +280,12 @@ $bg-list:(
 }
 
 @include ons{
-
+body{
+  overflow-x: hidden;
+}
   .header{
     height: 48px;
-    overflow-x: hidden;
+
     .top{
       height: 48px;
       background: #000;
@@ -292,7 +294,7 @@ $bg-list:(
         display: none;
       }
       .nav-phone{
-        overflow: inherit;
+
         display: block;
 
       }
