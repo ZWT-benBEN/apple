@@ -274,15 +274,11 @@ $bg-list:(
           }
         }
       }
-
     }
   }
 }
 
 @include ons{
-body{
-  overflow-x: hidden;
-}
   .header{
     height: 48px;
 
@@ -292,10 +288,11 @@ body{
 
       .nav{
         display: none;
+        overflow-x: hidden;
       }
       .nav-phone{
-
         display: block;
+
 
       }
       .search-box.active{

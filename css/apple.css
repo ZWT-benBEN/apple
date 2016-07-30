@@ -561,15 +561,14 @@ body {
 @media screen and (max-width: 736px) {
   .col.s1 {
     width: 8.33333%; }
-  body {
-    overflow-x: hidden; }
   .header {
     height: 48px; }
     .header .top {
       height: 48px;
       background: #000; }
       .header .top .nav {
-        display: none; }
+        display: none;
+        overflow-x: hidden; }
       .header .top .nav-phone {
         display: block; }
       .header .top .search-box.active {
@@ -625,15 +624,14 @@ body {
       animation: luo .8s ease .9s forwards; }
   .col.s2 {
     width: 16.66667%; }
-  body {
-    overflow-x: hidden; }
   .header {
     height: 48px; }
     .header .top {
       height: 48px;
       background: #000; }
       .header .top .nav {
-        display: none; }
+        display: none;
+        overflow-x: hidden; }
       .header .top .nav-phone {
         display: block; }
       .header .top .search-box.active {
@@ -689,15 +687,14 @@ body {
       animation: luo .8s ease .9s forwards; }
   .col.s3 {
     width: 25%; }
-  body {
-    overflow-x: hidden; }
   .header {
     height: 48px; }
     .header .top {
       height: 48px;
       background: #000; }
       .header .top .nav {
-        display: none; }
+        display: none;
+        overflow-x: hidden; }
       .header .top .nav-phone {
         display: block; }
       .header .top .search-box.active {
@@ -753,15 +750,14 @@ body {
       animation: luo .8s ease .9s forwards; }
   .col.s4 {
     width: 33.33333%; }
-  body {
-    overflow-x: hidden; }
   .header {
     height: 48px; }
     .header .top {
       height: 48px;
       background: #000; }
       .header .top .nav {
-        display: none; }
+        display: none;
+        overflow-x: hidden; }
       .header .top .nav-phone {
         display: block; }
       .header .top .search-box.active {
@@ -817,15 +813,14 @@ body {
       animation: luo .8s ease .9s forwards; }
   .col.s5 {
     width: 41.66667%; }
-  body {
-    overflow-x: hidden; }
   .header {
     height: 48px; }
     .header .top {
       height: 48px;
       background: #000; }
       .header .top .nav {
-        display: none; }
+        display: none;
+        overflow-x: hidden; }
       .header .top .nav-phone {
         display: block; }
       .header .top .search-box.active {
@@ -881,15 +876,14 @@ body {
       animation: luo .8s ease .9s forwards; }
   .col.s6 {
     width: 50%; }
-  body {
-    overflow-x: hidden; }
   .header {
     height: 48px; }
     .header .top {
       height: 48px;
       background: #000; }
       .header .top .nav {
-        display: none; }
+        display: none;
+        overflow-x: hidden; }
       .header .top .nav-phone {
         display: block; }
       .header .top .search-box.active {
@@ -945,15 +939,14 @@ body {
       animation: luo .8s ease .9s forwards; }
   .col.s7 {
     width: 58.33333%; }
-  body {
-    overflow-x: hidden; }
   .header {
     height: 48px; }
     .header .top {
       height: 48px;
       background: #000; }
       .header .top .nav {
-        display: none; }
+        display: none;
+        overflow-x: hidden; }
       .header .top .nav-phone {
         display: block; }
       .header .top .search-box.active {
@@ -1009,15 +1002,14 @@ body {
       animation: luo .8s ease .9s forwards; }
   .col.s8 {
     width: 66.66667%; }
-  body {
-    overflow-x: hidden; }
   .header {
     height: 48px; }
     .header .top {
       height: 48px;
       background: #000; }
       .header .top .nav {
-        display: none; }
+        display: none;
+        overflow-x: hidden; }
       .header .top .nav-phone {
         display: block; }
       .header .top .search-box.active {
@@ -1073,15 +1065,14 @@ body {
       animation: luo .8s ease .9s forwards; }
   .col.s9 {
     width: 75%; }
-  body {
-    overflow-x: hidden; }
   .header {
     height: 48px; }
     .header .top {
       height: 48px;
       background: #000; }
       .header .top .nav {
-        display: none; }
+        display: none;
+        overflow-x: hidden; }
       .header .top .nav-phone {
         display: block; }
       .header .top .search-box.active {
@@ -1137,15 +1128,14 @@ body {
       animation: luo .8s ease .9s forwards; }
   .col.s10 {
     width: 83.33333%; }
-  body {
-    overflow-x: hidden; }
   .header {
     height: 48px; }
     .header .top {
       height: 48px;
       background: #000; }
       .header .top .nav {
-        display: none; }
+        display: none;
+        overflow-x: hidden; }
       .header .top .nav-phone {
         display: block; }
       .header .top .search-box.active {
@@ -1201,15 +1191,14 @@ body {
       animation: luo .8s ease .9s forwards; }
   .col.s11 {
     width: 91.66667%; }
-  body {
-    overflow-x: hidden; }
   .header {
     height: 48px; }
     .header .top {
       height: 48px;
       background: #000; }
       .header .top .nav {
-        display: none; }
+        display: none;
+        overflow-x: hidden; }
       .header .top .nav-phone {
         display: block; }
       .header .top .search-box.active {
@@ -1265,15 +1254,14 @@ body {
       animation: luo .8s ease .9s forwards; }
   .col.s12 {
     width: 100%; }
-  body {
-    overflow-x: hidden; }
   .header {
     height: 48px; }
     .header .top {
       height: 48px;
       background: #000; }
       .header .top .nav {
-        display: none; }
+        display: none;
+        overflow-x: hidden; }
       .header .top .nav-phone {
         display: block; }
       .header .top .search-box.active {
