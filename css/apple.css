@@ -562,7 +562,8 @@ body {
   .col.s1 {
     width: 8.33333%; }
   .header {
-    height: 48px; }
+    height: 48px;
+    overflow: hidden; }
     .header .top {
       height: 48px;
       background: #000; }
@@ -624,7 +625,8 @@ body {
   .col.s2 {
     width: 16.66667%; }
   .header {
-    height: 48px; }
+    height: 48px;
+    overflow: hidden; }
     .header .top {
       height: 48px;
       background: #000; }
@@ -686,7 +688,8 @@ body {
   .col.s3 {
     width: 25%; }
   .header {
-    height: 48px; }
+    height: 48px;
+    overflow: hidden; }
     .header .top {
       height: 48px;
       background: #000; }
@@ -748,7 +751,8 @@ body {
   .col.s4 {
     width: 33.33333%; }
   .header {
-    height: 48px; }
+    height: 48px;
+    overflow: hidden; }
     .header .top {
       height: 48px;
       background: #000; }
@@ -810,7 +814,8 @@ body {
   .col.s5 {
     width: 41.66667%; }
   .header {
-    height: 48px; }
+    height: 48px;
+    overflow: hidden; }
     .header .top {
       height: 48px;
       background: #000; }
@@ -872,7 +877,8 @@ body {
   .col.s6 {
     width: 50%; }
   .header {
-    height: 48px; }
+    height: 48px;
+    overflow: hidden; }
     .header .top {
       height: 48px;
       background: #000; }
@@ -934,7 +940,8 @@ body {
   .col.s7 {
     width: 58.33333%; }
   .header {
-    height: 48px; }
+    height: 48px;
+    overflow: hidden; }
     .header .top {
       height: 48px;
       background: #000; }
@@ -996,7 +1003,8 @@ body {
   .col.s8 {
     width: 66.66667%; }
   .header {
-    height: 48px; }
+    height: 48px;
+    overflow: hidden; }
     .header .top {
       height: 48px;
       background: #000; }
@@ -1058,7 +1066,8 @@ body {
   .col.s9 {
     width: 75%; }
   .header {
-    height: 48px; }
+    height: 48px;
+    overflow: hidden; }
     .header .top {
       height: 48px;
       background: #000; }
@@ -1120,7 +1129,8 @@ body {
   .col.s10 {
     width: 83.33333%; }
   .header {
-    height: 48px; }
+    height: 48px;
+    overflow: hidden; }
     .header .top {
       height: 48px;
       background: #000; }
@@ -1182,7 +1192,8 @@ body {
   .col.s11 {
     width: 91.66667%; }
   .header {
-    height: 48px; }
+    height: 48px;
+    overflow: hidden; }
     .header .top {
       height: 48px;
       background: #000; }
@@ -1244,7 +1255,8 @@ body {
   .col.s12 {
     width: 100%; }
   .header {
-    height: 48px; }
+    height: 48px;
+    overflow: hidden; }
     .header .top {
       height: 48px;
       background: #000; }
