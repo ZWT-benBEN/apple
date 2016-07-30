@@ -563,7 +563,7 @@ body {
     width: 8.33333%; }
   .header {
     height: 48px;
-    overflow: hidden; }
+    overflow-x: hidden; }
     .header .top {
       height: 48px;
       background: #000; }
@@ -626,7 +626,7 @@ body {
     width: 16.66667%; }
   .header {
     height: 48px;
-    overflow: hidden; }
+    overflow-x: hidden; }
     .header .top {
       height: 48px;
       background: #000; }
@@ -689,7 +689,7 @@ body {
     width: 25%; }
   .header {
     height: 48px;
-    overflow: hidden; }
+    overflow-x: hidden; }
     .header .top {
       height: 48px;
       background: #000; }
@@ -752,7 +752,7 @@ body {
     width: 33.33333%; }
   .header {
     height: 48px;
-    overflow: hidden; }
+    overflow-x: hidden; }
     .header .top {
       height: 48px;
       background: #000; }
@@ -815,7 +815,7 @@ body {
     width: 41.66667%; }
   .header {
     height: 48px;
-    overflow: hidden; }
+    overflow-x: hidden; }
     .header .top {
       height: 48px;
       background: #000; }
@@ -878,7 +878,7 @@ body {
     width: 50%; }
   .header {
     height: 48px;
-    overflow: hidden; }
+    overflow-x: hidden; }
     .header .top {
       height: 48px;
       background: #000; }
@@ -941,7 +941,7 @@ body {
     width: 58.33333%; }
   .header {
     height: 48px;
-    overflow: hidden; }
+    overflow-x: hidden; }
     .header .top {
       height: 48px;
       background: #000; }
@@ -1004,7 +1004,7 @@ body {
     width: 66.66667%; }
   .header {
     height: 48px;
-    overflow: hidden; }
+    overflow-x: hidden; }
     .header .top {
       height: 48px;
       background: #000; }
@@ -1067,7 +1067,7 @@ body {
     width: 75%; }
   .header {
     height: 48px;
-    overflow: hidden; }
+    overflow-x: hidden; }
     .header .top {
       height: 48px;
       background: #000; }
@@ -1130,7 +1130,7 @@ body {
     width: 83.33333%; }
   .header {
     height: 48px;
-    overflow: hidden; }
+    overflow-x: hidden; }
     .header .top {
       height: 48px;
       background: #000; }
@@ -1193,7 +1193,7 @@ body {
     width: 91.66667%; }
   .header {
     height: 48px;
-    overflow: hidden; }
+    overflow-x: hidden; }
     .header .top {
       height: 48px;
       background: #000; }
@@ -1256,7 +1256,7 @@ body {
     width: 100%; }
   .header {
     height: 48px;
-    overflow: hidden; }
+    overflow-x: hidden; }
     .header .top {
       height: 48px;
       background: #000; }
