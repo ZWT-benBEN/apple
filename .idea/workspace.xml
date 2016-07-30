@@ -492,16 +492,16 @@
           <file leaf-file-name="apple.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/apple.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5748032">
-                  <caret line="290" column="24" selection-start-line="290" selection-start-column="24" selection-end-line="290" selection-end-column="24" />
+                <state vertical-scroll-proportion="0.52165353">
+                  <caret line="307" column="23" selection-start-line="307" selection-start-column="23" selection-end-line="307" selection-end-column="23" />
                   <folding>
                     <element signature="e#590#750#0" expanded="false" />
                     <element signature="e#857#1819#0" expanded="false" />
                     <element signature="e#1836#3341#0" expanded="false" />
                     <element signature="e#3365#4046#0" expanded="false" />
-                    <element signature="e#6974#7111#0" expanded="false" />
-                    <element signature="e#7149#7219#0" expanded="false" />
-                    <element signature="e#15162#17609#0" expanded="false" />
+                    <element signature="e#6968#7105#0" expanded="false" />
+                    <element signature="e#7143#7213#0" expanded="false" />
+                    <element signature="e#15156#17603#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -1619,16 +1619,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/apple.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5748032">
-          <caret line="290" column="24" selection-start-line="290" selection-start-column="24" selection-end-line="290" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.52165353">
+          <caret line="307" column="23" selection-start-line="307" selection-start-column="23" selection-end-line="307" selection-end-column="23" />
           <folding>
             <element signature="e#590#750#0" expanded="false" />
             <element signature="e#857#1819#0" expanded="false" />
             <element signature="e#1836#3341#0" expanded="false" />
             <element signature="e#3365#4046#0" expanded="false" />
-            <element signature="e#6974#7111#0" expanded="false" />
-            <element signature="e#7149#7219#0" expanded="false" />
-            <element signature="e#15162#17609#0" expanded="false" />
+            <element signature="e#6968#7105#0" expanded="false" />
+            <element signature="e#7143#7213#0" expanded="false" />
+            <element signature="e#15156#17603#0" expanded="false" />
           </folding>
         </state>
       </provider>

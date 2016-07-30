@@ -288,12 +288,10 @@ $bg-list:(
 
       .nav{
         display: none;
-        overflow-x: hidden;
+
       }
       .nav-phone{
         display: block;
-
-
       }
       .search-box.active{
         display: none;
@@ -307,7 +305,7 @@ $bg-list:(
     display: none;
     padding: 20px 0;
     position: absolute;
-
+    overflow-x: hidden;
     li{
       transition: all 0.8s ease;
       padding:0 60px ;
